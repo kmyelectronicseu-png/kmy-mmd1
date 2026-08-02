@@ -1,26 +1,45 @@
 # KMY MMD-1
 
-**Multifunctional Measurement Device** — eğri çizici, osiloskop ve multimetre
-işlevlerini tek cihazda toplayan masaüstü ölçüm aleti.
+Eğri çizici, osiloskop ve multimetre aynı kutuda. Kart üstünde arıza ararken
+bileşeni sökmeden ölçüm alır; iki probu karşılaştırır, sağlam bir kartla arızalı
+olanı yan yana koyar.
 
-Bu depo cihazın **yazılım güncellemelerinin dağıtım noktasıdır**.
+Bu depo cihazın bilgisayar uygulamasının ve yazılım güncellemelerinin dağıtıldığı
+yerdir. Cihazın kaynak kodu burada değildir.
+
+**İndirme ve kurulum:** https://kmyelectronicseu-png.github.io/kmy-mmd1/
+
+## Kısaca
+
+Kurulum dosyasını [Sürümler](../../releases/latest) sayfasından indirin,
+çalıştırın. Yönetici şifresi sormaz. Cihazı USB ile takıp uygulamada Bağlan
+deyin; cihaz açılışta kendi denetimini yapar, ilk on beş saniye komut kabul
+etmez.
+
+Kablosuz kullanmak isterseniz USB'yi çıkarın. Cihaz `KMY MMD-1` adında şifresiz
+bir ağ yayınlar; o ağa bağlanınca ayar sayfası açılır (açılmazsa tarayıcıya
+`192.168.4.1` yazın). Kendi ağınıza katma, sabit IP verme ve fabrika ayarlarına
+dönme işlemleri orada.
 
 ## Güncelleme
 
-Yayınlar sayfasındaki `.ctfw` dosyası cihaz yazılımı paketidir. Kurulum:
+Uygulama yeni sürümü kendisi görür ve Ayarlar → Cihaz altında haber verir.
+Onaylarsanız indirir, kurar, yeniden açılır.
 
-**Bilgisayar uygulaması → Ayarlar → Cihaz → Firmware güncelle**
+Cihazın yazılımı da aynı yerden güncellenir. `.ctfw` uzantılı dosya cihaz
+yazılımı paketidir; içinde hem ana kartın hem Wi-Fi modülünün yazılımı vardır ve
+hangisinin güncellenmesi gerekiyorsa uygulama onu yazar. Kalibrasyon kaydınız
+silinmez. İşlem sırasında kabloyu çıkarmayın.
 
-Uygulama güncellemeleri kendisi de denetler; istenirse eski bir sürüme
-dönülebilir. Güncelleme kalibrasyon kaydını silmez.
+Bir sürüm size uymadıysa eskisine dönebilirsiniz, hepsi listede durur.
 
-Paketler şifreli ve imzalıdır: cihaz doğrulamadan tek bayt yazmaz, indiren
-üçüncü kişiler firmware'i çıkaramaz.
+Paketler şifrelenmiş ve imzalıdır. Cihaz doğrulamadan tek bayt yazmaz; dosyayı
+indiren biri içindeki yazılımı çıkaramaz.
 
 ## Destek
 
-Cihazın seri numarası uygulamada **Ayarlar → Cihaz** altında görünür; destek
-taleplerinde bu numarayı belirtin.
+Seri numaranız uygulamada Ayarlar → Cihaz altında yazıyor. Bize yazarken
+eklerseniz işimizi kolaylaştırırsınız.
 
 ---
-© KMY Electronics
+KMY Electronics
