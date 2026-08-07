@@ -40,10 +40,8 @@ mevcut bir WiFi ağınıza alırsınız, ya da cihaz kendi WiFi ağını yayınl
 telefonu doğrudan o ağa bağlarsınız. Ağın olmadığı yerde ikincisi işinizi
 görür; ayrı bir yönlendirici gerekmez.
 
-> **Cihaz aynı anda tek bağlantıya hizmet eder.** USB ile WiFi'den yalnız
-> birinden bağlanabilirsiniz — ikisi birden olmaz. USB kablosu takılıyken cihaz
-> WiFi modülünü bilerek uyutur, çünkü ölçüm devresinin yanında yayın yapan bir
-> radyo okumaları bozar.
+> **Cihaz aynı anda tek bağlantıya hizmet eder.** USB kablosu ile cihaza
+> bağlandığınızda WiFi özelliğini kullanamazsınız.
 
 **WiFi kurulumu** cihaza nasıl bağlıysanız oradan yapılır — USB'den de, ağ
 üzerinden de. Uygulamada **Ayarlar → WiFi Kurulumu**'nu açıp ağ adı ile şifreyi
@@ -80,10 +78,8 @@ on your existing network, or the device broadcasts its own and the phone joins
 that. The second is what you want where there is no network — no separate
 router needed.
 
-> **The device serves one connection at a time.** You can connect over USB or
-> over Wi-Fi, not both. While the USB cable is plugged in, the device
-> deliberately puts its Wi-Fi module to sleep — a radio transmitting next to
-> the measurement front end disturbs the readings.
+> **The device serves one connection at a time.** While you are connected to
+> the device over USB, Wi-Fi is not available.
 
 **Wi-Fi setup** is done from whatever connection you already have — over USB or
 over the network, either works. Open **Settings → Wi-Fi Setup** in the app and
