@@ -45,15 +45,16 @@ görür; ayrı bir yönlendirici gerekmez.
 > WiFi modülünü bilerek uyutur, çünkü ölçüm devresinin yanında yayın yapan bir
 > radyo okumaları bozar.
 
-**WiFi kurulumu** iki yoldan yapılır. En kolayı: cihazı USB ile bilgisayara
-takıp uygulamadaki **Ayarlar → WiFi Kurulumu**'ndan ağ adı ile şifreyi
-göndermek. Uygulama, cihazı ağda bularak kurulumun tuttuğunu doğrular. Aynı
+**WiFi kurulumu** cihaza nasıl bağlıysanız oradan yapılır — USB'den de, ağ
+üzerinden de. Uygulamada **Ayarlar → WiFi Kurulumu**'nu açıp ağ adı ile şifreyi
+gönderirsiniz; uygulama cihazı ağda bularak kurulumun tuttuğunu doğrular. Aynı
 yerden sonradan ağı değiştirebilir ya da güncelleyebilirsiniz.
 
-Bilgisayarınız yoksa telefondan da yapılır: cihaz kutudan çıktığı hâliyle
-**KMY MMD-1** adlı şifresiz bir ağ yayınlar. Telefonu o ağa bağlayın,
-uygulamayı açıp **Bağlan** deyin, sonra yine **Ayarlar → WiFi Kurulumu**'ndan
-cihazı kendi ağınıza alın.
+Kutudan çıktığı hâliyle cihaz **KMY MMD-1** adlı şifresiz bir ağ yayınlar. Yani
+bilgisayar olmadan da kurulabilir: telefonu o ağa bağlayın, uygulamayı açıp
+**Bağlan** deyin, sonra WiFi kurulumundan cihazı kendi ağınıza alın. Sabit IP
+gibi ileri ayarlar için cihazın kendi kurulum sayfası da var (tarayıcıda
+`192.168.4.1`).
 
 Kurulumdan sonra uygulama güncellemeleri kendisi denetler ve onayınızla kurar.
 Eski sürümler [yayınlar sayfasında](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases).
@@ -84,15 +85,17 @@ router needed.
 > deliberately puts its Wi-Fi module to sleep — a radio transmitting next to
 > the measurement front end disturbs the readings.
 
-**Wi-Fi setup** can be done two ways. The easiest is over USB: plug the device
-into a PC and send the network name and password from **Settings → Wi-Fi
-Setup** in the app. The app confirms the setup by finding the device on the
-network. You can change or update the network from the same place later.
+**Wi-Fi setup** is done from whatever connection you already have — over USB or
+over the network, either works. Open **Settings → Wi-Fi Setup** in the app and
+send the network name and password; the app confirms the setup by finding the
+device on the network. You can change or update the network from the same place
+later.
 
-If you have no PC, do it from the phone: out of the box the device broadcasts
-an open network called **KMY MMD-1**. Join the phone to it, open the app and
-press **Connect**, then move the device onto your own network from **Settings →
-Wi-Fi Setup**.
+Out of the box the device broadcasts an open network called **KMY MMD-1**, so
+no PC is needed: join the phone to it, open the app, press **Connect**, then
+move the device onto your own network from Wi-Fi Setup. For advanced settings
+such as a static IP the device also serves its own setup page at
+`192.168.4.1`.
 
 Once installed, the app checks for updates itself and installs them with your
 say-so. Older versions are on the
