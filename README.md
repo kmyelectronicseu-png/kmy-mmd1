@@ -1,69 +1,75 @@
 # KMY MMD-1
 
-Multifunctional Measurement Device — curve tracer, oscilloscope and voltmeter
-in one instrument, with Windows software.
+Bileşenleri gerilim–akım eğrisinden tanıyan bir eğri çizici, iki kanallı bir
+osiloskop ve iki kanallı bir voltmetre. Tek kutuda, kendi yazılımıyla.
 
-## Download
-
-**[Download the latest version](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest)**
-
-Get `KMY-MMD-1-Kurulum.exe`, run it, and follow the wizard. It installs into
-your user folder, so Windows will not ask for an administrator password.
-Everything the device needs — including its firmware — is inside that one file.
-
-Once installed, the application checks for updates by itself and installs them
-with your confirmation.
-
-Older versions are on the [releases page](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases).
-
-## Documentation
-
-| | |
-|---|---|
-| **User guide (English)** | [docs/user-guide-en.md](docs/user-guide-en.md) |
-| **Kullanım kılavuzu (Türkçe)** | [docs/user-guide-tr.md](docs/user-guide-tr.md) |
-
-Both are also reachable from inside the application: **Settings →
-Documentation**.
-
-## Requirements
-
-64-bit Windows 10 or 11. The device is powered from the USB port; no separate
-supply is needed.
+*A curve tracer that identifies components from their voltage–current curve, a
+two-channel oscilloscope and a two-channel voltmeter — one instrument, with its
+own software.*
 
 ---
 
-# KMY MMD-1 (Türkçe)
+## İndirin / Download
 
-Çok Fonksiyonlu Ölçüm Cihazı — eğri çizici, osiloskop ve voltmetre tek alette,
-Windows yazılımıyla birlikte.
+|  | Türkçe | English |
+|---|---|---|
+| **Bilgisayar**<br>Windows 10 / 11, 64 bit | [Kurulum dosyasını indir][win] | [Download the installer][win] |
+| **Telefon ve tablet**<br>Android 7.0 ve üzeri | [APK dosyasını indir][apk] | [Download the APK][apk] |
 
-## İndirme
+[win]: https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-1-Kurulum.exe
+[apk]: https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-1-Mobil.apk
 
-**[Son sürümü indirin](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest)**
+**Türkçe.** Bilgisayarda kurulum dosyasını çalıştırıp sihirbazı geçin; yönetici
+parolası istemez. Telefonda indirdiğiniz APK'ya dokunun, Android mağaza dışından
+kuruluma izin vermenizi ister. Cihazın ihtiyacı olan her şey — cihaz yazılımı
+dahil — bu dosyaların içinde gelir, ayrıca indirilecek bir şey yoktur.
 
-`KMY-MMD-1-Kurulum.exe` dosyasını indirip çalıştırın ve sihirbazı takip edin.
-Kurulum kendi kullanıcı klasörünüze yapılır, Windows yönetici parolası sormaz.
-Cihazın ihtiyacı olan her şey — cihaz yazılımı dahil — bu tek dosyanın içinde
-gelir.
+Telefon cihaza yalnız WiFi ile bağlanır. Ölçüm tarafında eksik yoktur; tek
+farkı, cihaz yazılımının telefondan güncellenememesidir.
 
-Kurulumdan sonra uygulama güncellemeleri kendisi denetler ve onayınızla kurar.
-
+Uygulama kurulduktan sonra güncellemeleri kendisi denetler ve onayınızla kurar.
 Eski sürümler [yayınlar sayfasında](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases).
 
-## Belgeler
+**English.** On a PC, run the installer and work through the wizard; it never
+asks for an administrator password. On a phone, tap the APK you downloaded —
+Android will ask you to allow installs from outside the store. Everything the
+device needs, firmware included, comes inside these files. There is nothing
+else to download.
+
+The phone reaches the device over Wi-Fi only. Nothing is missing on the
+measurement side; the one difference is that device firmware cannot be updated
+from a phone.
+
+Once installed, the app checks for updates itself and installs them with your
+say-so. Older versions are on the
+[releases page](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases).
+
+---
+
+## Kullanım kılavuzu / User guide
 
 | | |
 |---|---|
-| **Kullanım kılavuzu (Türkçe)** | [docs/user-guide-tr.md](docs/user-guide-tr.md) |
-| **User guide (English)** | [docs/user-guide-en.md](docs/user-guide-en.md) |
+| **Türkçe** | [docs/user-guide-tr.md](docs/user-guide-tr.md) |
+| **English** | [docs/user-guide-en.md](docs/user-guide-en.md) |
 
-İkisine uygulamanın içinden de ulaşılır: **Ayarlar → Belgeler**.
+Ekran görüntüleriyle, baştan sona. Uygulamanın içinden de açılır:
+**Ayarlar → Belgeler**.
 
-## Gerekenler
+*Screenshots throughout, start to finish. Also reachable from inside the app:
+**Settings → Documentation**.*
 
-64 bit Windows 10 ya da 11. Cihaz gücünü USB portundan alır, ayrı bir besleme
-gerekmez.
+---
+
+## Kutudan çıkanlar / What it does
+
+- **Eğri testi** — bileşene bir sinyal uygular, eğriyi çizer, ne olduğunu
+  söyler. Direnç, kondansatör, bobin, diyot, zener.
+- **Kart kaydı ve testi** — kartın fotoğrafı üzerinde test noktaları
+  işaretlenir, her noktanın eğrisi kaydedilir. Şüpheli kart bu kayda karşı
+  denetlenir; uyumsuz noktalar fotoğrafta kırmızı görünür.
+- **Osiloskop** — iki kanal, 5,5 kS/s, son yirmi saniye geriye sarılabilir.
+- **Multimetre** — iki prob aynı anda, DC/AC kendiliğinden.
 
 ---
 
