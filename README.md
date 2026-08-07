@@ -19,26 +19,80 @@ own software.*
 [win]: https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-1-Kurulum.exe
 [apk]: https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-1-Mobil.apk
 
-**Türkçe.** Bilgisayarda kurulum dosyasını çalıştırıp sihirbazı geçin; yönetici
-parolası istemez. Telefonda indirdiğiniz APK'ya dokunun, Android mağaza dışından
-kuruluma izin vermenizi ister. Cihazın ihtiyacı olan her şey — cihaz yazılımı
-dahil — bu dosyaların içinde gelir, ayrıca indirilecek bir şey yoktur.
+---
 
-Telefon cihaza yalnız WiFi ile bağlanır. Ölçüm tarafında eksik yoktur; tek
-farkı, cihaz yazılımının telefondan güncellenememesidir.
+## Kurulum
 
-Uygulama kurulduktan sonra güncellemeleri kendisi denetler ve onayınızla kurar.
+Bilgisayarda kurulum dosyasını indirip doğrudan çalıştırın; yönetici parolası
+istemez.
+
+Telefonda APK dosyasını indirip üstüne dokunun. Android, mağaza dışından
+uygulama kurmaya izin vermenizi ister — telefonun ayarlarından bu izni
+vermezseniz kurulum başlamaz.
+
+Cihazın ihtiyacı olan her şey, cihaz yazılımı dahil, bu uygulamaların içinde
+gelir. Ayrıca indirilecek bir şey yoktur.
+
+## Cihaza bağlanmak
+
+Bilgisayar cihaza USB kablosuyla bağlanır. Telefon ise WiFi ile: cihazı ya
+mevcut bir WiFi ağınıza alırsınız, ya da cihaz kendi WiFi ağını yayınlar ve
+telefonu doğrudan o ağa bağlarsınız. Ağın olmadığı yerde ikincisi işinizi
+görür; ayrı bir yönlendirici gerekmez.
+
+> **Cihaz aynı anda tek bağlantıya hizmet eder.** USB ile WiFi'den yalnız
+> birinden bağlanabilirsiniz — ikisi birden olmaz. USB kablosu takılıyken cihaz
+> WiFi modülünü bilerek uyutur, çünkü ölçüm devresinin yanında yayın yapan bir
+> radyo okumaları bozar.
+
+**WiFi kurulumu** iki yoldan yapılır. En kolayı: cihazı USB ile bilgisayara
+takıp uygulamadaki **Ayarlar → WiFi Kurulumu**'ndan ağ adı ile şifreyi
+göndermek. Uygulama, cihazı ağda bularak kurulumun tuttuğunu doğrular. Aynı
+yerden sonradan ağı değiştirebilir ya da güncelleyebilirsiniz.
+
+Bilgisayarınız yoksa telefondan da yapılır: cihaz kutudan çıktığı hâliyle
+**KMY MMD-1** adlı şifresiz bir ağ yayınlar. Telefonu o ağa bağlayın,
+uygulamayı açıp **Bağlan** deyin, sonra yine **Ayarlar → WiFi Kurulumu**'ndan
+cihazı kendi ağınıza alın.
+
+Kurulumdan sonra uygulama güncellemeleri kendisi denetler ve onayınızla kurar.
 Eski sürümler [yayınlar sayfasında](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases).
 
-**English.** On a PC, run the installer and work through the wizard; it never
-asks for an administrator password. On a phone, tap the APK you downloaded —
-Android will ask you to allow installs from outside the store. Everything the
-device needs, firmware included, comes inside these files. There is nothing
-else to download.
+---
 
-The phone reaches the device over Wi-Fi only. Nothing is missing on the
-measurement side; the one difference is that device firmware cannot be updated
-from a phone.
+## Installation
+
+On a PC, download the installer and run it. It never asks for an administrator
+password.
+
+On a phone, download the APK and tap it. Android will ask you to allow installs
+from outside the store — the install will not start until you grant that
+permission in the phone's settings.
+
+Everything the device needs, firmware included, comes inside these
+applications. There is nothing else to download.
+
+## Connecting to the device
+
+A PC connects over USB. A phone connects over Wi-Fi: either you put the device
+on your existing network, or the device broadcasts its own and the phone joins
+that. The second is what you want where there is no network — no separate
+router needed.
+
+> **The device serves one connection at a time.** You can connect over USB or
+> over Wi-Fi, not both. While the USB cable is plugged in, the device
+> deliberately puts its Wi-Fi module to sleep — a radio transmitting next to
+> the measurement front end disturbs the readings.
+
+**Wi-Fi setup** can be done two ways. The easiest is over USB: plug the device
+into a PC and send the network name and password from **Settings → Wi-Fi
+Setup** in the app. The app confirms the setup by finding the device on the
+network. You can change or update the network from the same place later.
+
+If you have no PC, do it from the phone: out of the box the device broadcasts
+an open network called **KMY MMD-1**. Join the phone to it, open the app and
+press **Connect**, then move the device onto your own network from **Settings →
+Wi-Fi Setup**.
 
 Once installed, the app checks for updates itself and installs them with your
 say-so. Older versions are on the
@@ -61,7 +115,7 @@ Ekran görüntüleriyle, baştan sona. Uygulamanın içinden de açılır:
 
 ---
 
-## Kutudan çıkanlar / What it does
+## Ne yapar / What it does
 
 - **Eğri testi** — bileşene bir sinyal uygular, eğriyi çizer, ne olduğunu
   söyler. Direnç, kondansatör, bobin, diyot, zener.
