@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="frontFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232a35"/>
+      <stop offset="1" stop-color="#171c24"/>
+    </linearGradient>
+    <linearGradient id="topFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a4452"/>
+      <stop offset="1" stop-color="#2b3340"/>
+    </linearGradient>
+    <linearGradient id="sideFace" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#141922"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <radialGradient id="jackRed" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ff6b5e"/>
+      <stop offset="0.5" stop-color="#e5392f"/>
+      <stop offset="1" stop-color="#a6231c"/>
+    </radialGradient>
+    <radialGradient id="jackBlack" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#4a5361"/>
+      <stop offset="0.5" stop-color="#2b323d"/>
+      <stop offset="1" stop-color="#12161c"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="560" fill="#0b0e14"/>
+
+  <!-- ana govde: izometrik kutu -->
+  <g>
+    <!-- ust yuz -->
+    <polygon points="150,150 550,150 650,90 250,90" fill="url(#topFace)" stroke="#4a5566" stroke-width="1.5"/>
+    <!-- sag yan yuz -->
+    <polygon points="550,150 550,380 650,320 650,90" fill="url(#sideFace)" stroke="#0a0c10" stroke-width="1.5"/>
+    <!-- on yuz -->
+    <rect x="150" y="150" width="400" height="230" fill="url(#frontFace)" stroke="#3a4452" stroke-width="1.5"/>
+
+    <!-- ust yuzdeki urun adi -->
+    <text x="400" y="123" font-size="17" font-weight="600" fill="#c7d0dc" text-anchor="middle" letter-spacing="1">KMY MMD-1</text>
+
+    <!-- on paneldeki 4 banana giris -->
+    <g>
+      <circle cx="220" cy="270" r="24" fill="url(#jackRed)" stroke="#7a1a14" stroke-width="2"/>
+      <circle cx="220" cy="270" r="9" fill="#1a0605"/>
+      <circle cx="307" cy="270" r="24" fill="url(#jackBlack)" stroke="#05070a" stroke-width="2"/>
+      <circle cx="307" cy="270" r="9" fill="#000"/>
+      <circle cx="394" cy="270" r="24" fill="url(#jackBlack)" stroke="#05070a" stroke-width="2"/>
+      <circle cx="394" cy="270" r="9" fill="#000"/>
+      <circle cx="481" cy="270" r="24" fill="url(#jackRed)" stroke="#7a1a14" stroke-width="2"/>
+      <circle cx="481" cy="270" r="9" fill="#1a0605"/>
+    </g>
+
+    <!-- etiketler -->
+    <text x="220" y="330" font-size="14" font-weight="600" fill="#4fd1c5" text-anchor="middle">PROB 1</text>
+    <text x="220" y="348" font-size="11" fill="#7d8797" text-anchor="middle">aktif</text>
+
+    <text x="307" y="330" font-size="14" font-weight="600" fill="#9aa4b2" text-anchor="middle">GND</text>
+
+    <text x="394" y="330" font-size="14" font-weight="600" fill="#9aa4b2" text-anchor="middle">GND</text>
+
+    <text x="481" y="330" font-size="14" font-weight="600" fill="#ffd54f" text-anchor="middle">PROB 2</text>
+    <text x="481" y="348" font-size="11" fill="#7d8797" text-anchor="middle">aktif</text>
+
+    <text x="350" y="200" font-size="13" fill="#5b6472" text-anchor="middle">ön panel — 4 × 4 mm banana giriş</text>
+  </g>
+
+  <!-- yonlendirici oklar / ayrac -->
+  <line x1="700" y1="130" x2="760" y2="130" stroke="#2a3542" stroke-width="1.5"/>
+
+  <!-- arka panel — kucuk duz sema -->
+  <g transform="translate(700,170)">
+    <text x="90" y="-15" font-size="14" font-weight="600" fill="#c7d0dc" text-anchor="middle">Arka panel</text>
+    <rect x="0" y="0" width="220" height="120" rx="10" fill="#171c24" stroke="#3a4452" stroke-width="1.5"/>
+
+    <!-- guc girisi (sol) -->
+    <circle cx="55" cy="60" r="20" fill="#20262f" stroke="#4a5566" stroke-width="2"/>
+    <circle cx="55" cy="60" r="8" fill="#0d1117"/>
+    <text x="55" y="100" font-size="12" fill="#9aa4b2" text-anchor="middle">Güç girişi</text>
+
+    <!-- usb-c (sag) -->
+    <rect x="140" y="45" width="46" height="20" rx="8" fill="#20262f" stroke="#4a5566" stroke-width="2"/>
+    <rect x="150" y="50" width="26" height="10" rx="5" fill="#0d1117"/>
+    <text x="163" y="100" font-size="12" fill="#4fd1c5" text-anchor="middle">USB-C</text>
+  </g>
+
+  <text x="480" y="450" font-size="13" fill="#5b6472" text-anchor="middle">Kutunun üstünde ışık ya da düğme yoktur — durum her zaman uygulama ekranından okunur.</text>
+</svg>
