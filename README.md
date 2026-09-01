@@ -16,11 +16,13 @@ KMY MMD-1; elektronik kartlar üzerindeki arızalı bileşenleri, karta herhangi
 
 ### 📖 Kullanım Kılavuzları
 Cihazın ve yazılımın tüm fonksiyonlarını içeren detaylı teknik dökümantasyona aşağıdaki bağlantılardan erişebilirsiniz:
-* 🇹🇷 **Türkçe Kullanım Kılavuzu:** [user-guide-tr.md](user-guide-tr.md)
-* 🇬🇧 **English User Guide:** [user-guide-en.md](user-guide-en.md)
-* 🇩🇪 **Deutsches Benutzerhandbuch:** [user-guide-de.md](user-guide-de.md)
-* 🇪🇸 **Guía del Usuario en Español:** [user-guide-es.md](user-guide-es.md)
-* 🇫🇷 **Guide de l'Utilisateur en Français:** [user-guide-fr.md](user-guide-fr.md)
+| Dil | PDF | Web |
+| :--- | :--- | :--- |
+| 🇹🇷 **Türkçe** | [İndir (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-tr.pdf) | [Görüntüle](docs/user-guide-tr.md) |
+| 🇬🇧 **English** | [İndir (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-en.pdf) | [Görüntüle](docs/user-guide-en.md) |
+| 🇩🇪 **Deutsch** | [İndir (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-de.pdf) | [Görüntüle](docs/user-guide-de.md) |
+| 🇪🇸 **Español** | [İndir (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-es.pdf) | [Görüntüle](docs/user-guide-es.md) |
+| 🇫🇷 **Français** | [İndir (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-fr.pdf) | [Görüntüle](docs/user-guide-fr.md) |
 
 ### 🌟 Öne Çıkan Özellikler
 * **Eğri Testi (V-I Analizi):** Bileşenin gerilim-akım karakteristiğini çizerek direnç, kondansatör, bobin, diyot ve zener tespiti yapar.
@@ -47,11 +49,13 @@ KMY MMD-1 is a professional fault detection and test device that allows you to i
 
 ### 📖 User Guides
 Detailed technical documentation covering all functions of the device and software is available at the following links:
-* 🇹🇷 **Turkish User Guide:** [user-guide-tr.md](user-guide-tr.md)
-* 🇬🇧 **English User Guide:** [user-guide-en.md](user-guide-en.md)
-* 🇩🇪 **Deutsches Benutzerhandbuch:** [user-guide-de.md](user-guide-de.md)
-* 🇪🇸 **Guía del Usuario en Español:** [user-guide-es.md](user-guide-es.md)
-* 🇫🇷 **Guide de l'Utilisateur en Français:** [user-guide-fr.md](user-guide-fr.md)
+| Language | PDF | Web |
+| :--- | :--- | :--- |
+| 🇹🇷 **Türkçe** | [Download (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-tr.pdf) | [View](docs/user-guide-tr.md) |
+| 🇬🇧 **English** | [Download (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-en.pdf) | [View](docs/user-guide-en.md) |
+| 🇩🇪 **Deutsch** | [Download (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-de.pdf) | [View](docs/user-guide-de.md) |
+| 🇪🇸 **Español** | [Download (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-es.pdf) | [View](docs/user-guide-es.md) |
+| 🇫🇷 **Français** | [Download (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-fr.pdf) | [View](docs/user-guide-fr.md) |
 
 ### 🌟 Key Features
 * **Curve Testing (V-I Analysis):** Plots the voltage-current characteristics of the component to identify resistors, capacitors, inductors, diodes, and zeners.
@@ -78,11 +82,13 @@ KMY MMD-1 ist ein professionelles Fehlersuch- und Prüfgerät, mit dem Sie defek
 
 ### 📖 Benutzerhandbücher
 Eine ausführliche technische Dokumentation, die alle Funktionen des Geräts und der Software abdeckt, finden Sie unter den folgenden Links:
-* 🇹🇷 **Türkçe Kullanım Kılavuzu:** [user-guide-tr.md](user-guide-tr.md)
-* 🇬🇧 **English User Guide:** [user-guide-en.md](user-guide-en.md)
-* 🇩🇪 **Deutsches Benutzerhandbuch:** [user-guide-de.md](user-guide-de.md)
-* 🇪🇸 **Guía del Usuario en Español:** [user-guide-es.md](user-guide-es.md)
-* 🇫🇷 **Guide de l'Utilisateur en Français:** [user-guide-fr.md](user-guide-fr.md)
+| Sprache | PDF | Web |
+| :--- | :--- | :--- |
+| 🇹🇷 **Türkçe** | [Herunterladen (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-tr.pdf) | [Ansehen](docs/user-guide-tr.md) |
+| 🇬🇧 **English** | [Herunterladen (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-en.pdf) | [Ansehen](docs/user-guide-en.md) |
+| 🇩🇪 **Deutsch** | [Herunterladen (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-de.pdf) | [Ansehen](docs/user-guide-de.md) |
+| 🇪🇸 **Español** | [Herunterladen (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-es.pdf) | [Ansehen](docs/user-guide-es.md) |
+| 🇫🇷 **Français** | [Herunterladen (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-fr.pdf) | [Ansehen](docs/user-guide-fr.md) |
 
 ### 🌟 Hauptmerkmale
 * **Kennlinientest (V-I-Analyse):** Zeichnet die Spannungs-Strom-Kennlinie des Bauteils auf, um Widerstände, Kondensatoren, Spulen, Dioden und Zener-Dioden zu identifizieren.
@@ -109,11 +115,13 @@ KMY MMD-1 es un dispositivo profesional de prueba y detección de fallas que per
 
 ### 📖 Guías del Usuario
 La documentación técnica detallada que cubre todas las funciones del dispositivo y del software está disponible en los siguientes enlaces:
-* 🇹🇷 **Türkçe Kullanım Kılavuzu:** [user-guide-tr.md](user-guide-tr.md)
-* 🇬🇧 **English User Guide:** [user-guide-en.md](user-guide-en.md)
-* 🇩🇪 **Deutsches Benutzerhandbuch:** [user-guide-de.md](user-guide-de.md)
-* 🇪🇸 **Guía del Usuario en Español:** [user-guide-es.md](user-guide-es.md)
-* 🇫🇷 **Guide de l'Utilisateur en Français:** [user-guide-fr.md](user-guide-fr.md)
+| Idioma | PDF | Web |
+| :--- | :--- | :--- |
+| 🇹🇷 **Türkçe** | [Descargar (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-tr.pdf) | [Ver](docs/user-guide-tr.md) |
+| 🇬🇧 **English** | [Descargar (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-en.pdf) | [Ver](docs/user-guide-en.md) |
+| 🇩🇪 **Deutsch** | [Descargar (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-de.pdf) | [Ver](docs/user-guide-de.md) |
+| 🇪🇸 **Español** | [Descargar (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-es.pdf) | [Ver](docs/user-guide-es.md) |
+| 🇫🇷 **Français** | [Descargar (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-fr.pdf) | [Ver](docs/user-guide-fr.md) |
 
 ### 🌟 Características Clave
 * **Prueba de Curvas (Análisis V-I):** Traza las características de voltaje-corriente del componente para identificar resistencias, capacitores, inductores, diodos y zeners.
@@ -140,11 +148,13 @@ KMY MMD-1 est un appareil professionnel de test et de détection de pannes qui p
 
 ### 📖 Guides de l'Utilisateur
 Une documentation technique détaillée couvrant toutes les fonctions de l'appareil et du logiciel est disponible sur les liens suivants :
-* 🇹🇷 **Türkçe Kullanım Kılavuzu:** [user-guide-tr.md](user-guide-tr.md)
-* 🇬🇧 **English User Guide:** [user-guide-en.md](user-guide-en.md)
-* 🇩🇪 **Deutsches Benutzerhandbuch:** [user-guide-de.md](user-guide-de.md)
-* 🇪🇸 **Guía del Usuario en Español:** [user-guide-es.md](user-guide-es.md)
-* 🇫🇷 **Guide de l'Utilisateur en Français:** [user-guide-fr.md](user-guide-fr.md)
+| Langue | PDF | Web |
+| :--- | :--- | :--- |
+| 🇹🇷 **Türkçe** | [Télécharger (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-tr.pdf) | [Consulter](docs/user-guide-tr.md) |
+| 🇬🇧 **English** | [Télécharger (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-en.pdf) | [Consulter](docs/user-guide-en.md) |
+| 🇩🇪 **Deutsch** | [Télécharger (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-de.pdf) | [Consulter](docs/user-guide-de.md) |
+| 🇪🇸 **Español** | [Télécharger (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-es.pdf) | [Consulter](docs/user-guide-es.md) |
+| 🇫🇷 **Français** | [Télécharger (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd1-user-guide-fr.pdf) | [Consulter](docs/user-guide-fr.md) |
 
 ### 🌟 Caractéristiques Principales
 * **Test de Tracé de Courbe (Analyse V-I):** Trace la caractéristique tension-courant du composant pour identifier les résistances, condensateurs, inductances, diodes et zeners.
