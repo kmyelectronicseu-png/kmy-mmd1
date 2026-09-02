@@ -59,7 +59,7 @@ Cihaz, bu tespiti üç farklı yöntemle gerçekleştirmektedir: [4, 5]
 
 ### 2. Cihaza İlk Bakış
 
-![Cihaza genel bakış](images/shared/device-overview.svg)
+![Cihaza genel bakış](images/tr/device-overview.svg)
 
 Cihazın ön panelinde 4 adet 4 mm banana tipi soket girişi yer almaktadır. En solda ve en sağda konumlandırılmış olan soketler aktif problardır (Prob 1 ve Prob 2). Eğri testi, osiloskop ve multimetre ölçümlerinin tamamı bu iki aktif giriş üzerinden gerçekleştirilmektedir. Ortadaki iki soket ise şasi (GND) bağlantı noktalarıdır. [5]
 
@@ -126,7 +126,7 @@ Bölüm 9'da diğer tüm bileşenlerin ekrandaki karakteristik imzaları ayrınt
 
 ### 7. Eğri Testinin Çalışma Mantığı
 
-![Ana pencere](images/shared/main-window.png)
+![Ana pencere](images/tr/main-window.png)
 
 Yazılım arayüzünde; sol tarafta test parametreleri, merkezde grafik ekranı ve sağ kenarda ise Karşılaştırma, Kart Kaydı ve Kart Testi sekmeleri yer almaktadır. [11]
 
@@ -174,78 +174,78 @@ Grafik ekranının hemen altındaki sonuç kartı; cihazın algıladığı bile�
 #### Direnç
 Grafik ekranını tam ortadan kesen düz, eğik bir çizgidir. Direnç değeri küçüldükçe çizgi dike yakın bir açı alır; direnç büyüdükçe çizgi yataylaşır. Frekansı değiştirdiğinizde bu çizginin açısı asla değişmez. Direnci diğer tüm bileşenlerden ayıran en net özellik budur.
 
-![Direnç eğrisi](images/shared/curve-resistor.png)
+![Direnç eğrisi](images/tr/curve-resistor.png)
 
  [15]
 
 #### Kondansatör
 
-![Kondansatör eğrisi](images/shared/curve-capacitor.png)
+![Kondansatör eğrisi](images/tr/curve-capacitor.png)
 Ekranda net bir elips oluşturur. Frekans yükseltildiğinde elipsin içi açılıp belirginleşirken, frekans düşürüldüğünde ince bir çizgiye doğru kapanır. [16]
 
 #### Bobin
 
-![Bobin eğrisi](images/shared/curve-inductor.png)
+![Bobin eğrisi](images/tr/curve-inductor.png)
 Kondansatörün tam ayna görüntüsüdür. Yine bir elips çizer ancak tepkisi ters yöndedir: Frekans yükseltildiğinde elips daralırken, frekans düştükçe genişler. [16]
 
 #### Kondansatör + ESR (Seri Eşdeğer Direnç)
 Kondansatörün karakteristik elipsidir ancak grafik üzerinde hafifçe sağa veya sola yatık durur. Buradaki seri direnç (ESR) elipsi açılı hale getirir. Sonuç kartında kondansatörün kapasitans değeri ile paralel/seri direnç değerleri ayrı ayrı gösterilir.
 
-![Kondansatör + ESR eğrisi](images/shared/curve-capacitor-esr.png)
+![Kondansatör + ESR eğrisi](images/tr/curve-capacitor-esr.png)
 
  [16]
 
 #### Diyot
 Tek yönde düz (kesimde), diğer yönde ise belirgin bir "diz" (iletimde) şekli oluşturur. Bu diz noktasının gerilim eksenindeki konumu, diyotun iletime geçme (eşik) voltajıdır. Silisyum diyotlarda bu eşik 0,6 V - 0,7 V civarındayken, Schottky diyotlarda daha solda (daha düşük gerilimde), LED'lerde ise belirgin şekilde daha sağda (yüksek gerilimde) yer alır.
 
-![Diyot eğrisi](images/shared/curve-diode.png)
+![Diyot eğrisi](images/tr/curve-diode.png)
 
  [16]
 
 #### Zener Diyot
 Grafiğin her iki yönünde de diz kırılması görülür. Sağdaki kırılma diyotun normal iletim eşiğini, soldaki kırılma ise zener delinme gerilimini ($V_z$) gösterir. Bu cihazla 15 V'a kadar olan zener diyotları kolayca analiz edebilirsiniz; daha yüksek gerilimli zener'ler için cihazın test voltaj sınırı yetmeyecektir.
 
-![Zener eğrisi](images/shared/curve-zener.png)
+![Zener eğrisi](images/tr/curve-zener.png)
 
  [17]
 
 #### TVS Diyot
 
-![Çift yönlü TVS eğrisi](images/shared/curve-tvs-bidirectional.png)
+![Çift yönlü TVS eğrisi](images/tr/curve-tvs-bidirectional.png)
 Tek yönlü (uni-directional) bir TVS diyot, elektriksel olarak zener diyotla tamamen aynı karakteristiği sergiler. Cihaz da bunu otomatik olarak **ZENER** şeklinde sınıflandırır (sonuç kartında ayrı bir "TVS" ibaresi yer almaz). Çift yönlü (bi-directional) TVS diyotların her iki yöndeki simetrik kırılması ise standart bileşen sınıflarına tam oturmadığı için ekranda **|Z|** veya **Tanımsız** olarak raporlanabilir. [17]
 
 #### MOSFET — Gate-Source Uçları
 MOSFET'lerin "gate" ucu, yapısı gereği gövdeden yalıtılmış çok küçük bir kondansatör gibidir ve üzerinden neredeyse hiç akım geçmez. Küçük sinyal MOSFET'lerinde bu kapasite değeri o kadar düşüktür ki (birkaç pikofarad) akan akım cihazın ölçüm sınırının altında kalır ve ekranda **AÇIK DEVRE** uyarısı görünür. Bu durum bir hata değil, bileşenin doğal yapısıdır. Daha güçlü güç MOSFET'lerinde (birkaç nanofarad kapasiteli) ise ince bir **Kondansatör** elipsi görebilirsiniz.
 
-![MOSFET Gate-Source eğrisi](images/shared/curve-mosfet-gs.png)
+![MOSFET Gate-Source eğrisi](images/tr/curve-mosfet-gs.png)
 
  [18]
 
 #### MOSFET — Drain-Source Uçları
 Her MOSFET'in içerisinde üretim aşamasında doğal olarak oluşan bir gövde diyotu (body diode) bulunur. Gate ucu boşta veya Source ucuna bağlıyken Drain-Source arasına dokunduğunuzda, akımın kanaldan değil bu gövde diyotundan aktığını görürsünüz. Cihaz bunu doğrudan standart bir **DİYOT** olarak algılar; yalnızca sinyal diyotlarına kıyasla iletim gerilimi ($V_f$) biraz daha yüksek çıkabilir.
 
-![MOSFET Drain-Source eğrisi](images/shared/curve-mosfet-ds.png)
+![MOSFET Drain-Source eğrisi](images/tr/curve-mosfet-ds.png)
 
  [19]
 
 #### Transistör — Baz-Emiter Eklemi
 Baz-Emiter arası elektriksel olarak bir diyot eklemidir. Cihaz ekranda **DİYOT** yazar ve iletim voltajı ($V_f$) tipik olarak 0,65 V ile 0,70 V arasında ölçülür.
 
-![Transistör Baz-Emiter eğrisi](images/shared/curve-transistor-be.png)
+![Transistör Baz-Emiter eğrisi](images/tr/curve-transistor-be.png)
 
  [19]
 
 #### Transistör — Baz-Kolektör Eklemi
 Baz-Kolektör arası da benzer şekilde bir diyot eklemidir. Ancak bu eklem fiziksel olarak daha geniş bir alana yayıldığı için eşik voltajı genellikle Baz-Emiter eklemine göre bir miktar daha düşük çıkar. Sonuç kartında yine **DİYOT** ifadesi yer alır.
 
-![Transistör Baz-Kolektör eğrisi](images/shared/curve-transistor-bc.png)
+![Transistör Baz-Kolektör eğrisi](images/tr/curve-transistor-bc.png)
 
  [19]
 
 #### Transistör — Kolektör-Emiter Uçları
 Baz ucu boşta bırakılarak Kolektör-Emiter uçları ölçüldüğünde her iki iç eklem de kapalı kalacağından cihaz ekranda **AÇIK DEVRE** gösterecektir. Bu bir arıza belirtisi değildir; transistörün çalışması için baz tetiklemesi gerektiğinden normal şartlarda yalıtım durumunda olması beklenir.
 
-![Transistör Kolektör-Emiter eğrisi](images/shared/curve-transistor-ce.png)
+![Transistör Kolektör-Emiter eğrisi](images/tr/curve-transistor-ce.png)
 
  [20]
 
@@ -253,7 +253,7 @@ Baz ucu boşta bırakılarak Kolektör-Emiter uçları ölçüldüğünde her ik
 
 ### 10. Gelişmiş Ölçüm Ayarları
 
-![Gelişmiş panel](images/shared/advanced-panel.png)
+![Gelişmiş panel](images/tr/advanced-panel.png)
 
 Arayüzde **Gelişmiş** görünüme geçiş yapıldığında, Basit moddaki üç parametre artık kademeli değil, hassas ayar barlarıyla milimetrik olarak kontrol edilebilir duruma gelir (Gerilim 0,1 - 15 V, Frekans 1 - 1000 Hz arası). Bu modda ek olarak şu gelişmiş özellikler kontrolünüze sunulur: [21]
 
@@ -291,7 +291,7 @@ Bu uyarıları almanız, yaptığınız ölçümün tamamen yanlış olduğu anl
 
 ### 12. Karşılaştırma Fonksiyonları
 
-![Karşılaştırma paneli](images/shared/compare-panel.png)
+![Karşılaştırma paneli](images/tr/compare-panel.png)
 
 Ekranın sağ kenarındaki **Karşılaştırma** sekmesi, pratik bir yan menü çekmecesi açar. Burada seçebileceğiniz üç temel mod bulunur: [25]
 
@@ -311,7 +311,7 @@ Sürekli tamir veya üretim doğrulaması yaptığınız belirli kart modelleri 
 
 #### Adım Adım Kart Referansı Kaydetme:
 
-![Kart kaydı arayüzü](images/shared/board-record-interface.png)
+![Kart kaydı arayüzü](images/tr/board-record-interface.png)
 1. **Proje Klasörü Oluşturun:** Kendinize bir çalışma klasörü seçin. Kartın görseli ve eklediğiniz tüm test noktaları bu klasörde tek bir bütün halinde tutulur. Böylece projeyi klasör olarak kopyalayıp başka bir bilgisayarda da doğrudan kullanabilirsiniz. [27]
 2. **Kart Görseli Ekleyin:** Kartın üstten çekilmiş, gölgesiz ve net bir fotoğrafını sisteme yükleyin. Düzgün bir ışık altında çekilmiş fotoğraflar, test noktalarını görsel üzerinde doğru konumlandırmanızı kolaylaştırır. [27]
 3. **Noktaları Tanımlayın:** Test probunu kart üzerindeki hedeflenen noktaya dokundurun. Aynı anda yazılım ekranındaki fotoğrafta da ilgili yere tıklayın. Noktaya açıklayıcı bir isim verin (kart baskısındaki R14, C7, U3-1 gibi kodları kullanmanız önerilir) ve **Noktayı Kaydet** butonuna basın. [27]
@@ -322,7 +322,7 @@ Sürekli tamir veya üretim doğrulaması yaptığınız belirli kart modelleri 
 #### Kayıtlı Kartı Test Etme:
 **Testi Başlat** butonuna basın ve probları sırasıyla belirlenen noktalara dokundurun. Sistem her noktayı hızlıca ölçer, referans değerleriyle karşılaştırır ve "Geçti" veya "Kaldı" olarak işaretler. Eşleşmeyen hatalı noktalar, kart fotoğrafı üzerinde doğrudan **kırmızı renkli işaretçilerle** gösterilir. Böylece sıkıcı listelerle uğraşmak yerine, arızanın görsel haritasına sahip olursunuz.
 
-![Kart testi arayüzü](images/shared/board-test-interface.png)
+![Kart testi arayüzü](images/tr/board-test-interface.png)
 
  Test akışını dilediğiniz an duraklatabilir, bazı noktaları atlayabilir ve süreç sonunda **Kalanları Test Et** seçeneğiyle sadece eksik kalan noktaları tamamlayabilirsiniz. [28]
 
@@ -339,7 +339,7 @@ Osiloskop moduna geçildiğinde cihazın sinyal üreteci çıkışı tamamen kap
 
 🎨 **Kanal Renk Düzeni Hakkında Önemli Not:** Osiloskop ekranında Kanal 1 **sarı**, Kanal 2 ise **camgöbeği** rengiyle temsil edilir. Bu renk şeması, Eğri Testi ekranındaki Prob 1 (camgöbeği) ve Prob 2 (sarı) renklerinin tam tersidir. İki farklı çalışma modunun birbirine karışmaması için bu renkler bilinçli olarak bu şekilde tasarlanmıştır; mod geçişlerinde renk farkı sizi şaşırtmasın.
 
-![Osiloskop modu](images/shared/oscilloscope-mode.png)
+![Osiloskop modu](images/tr/oscilloscope-mode.png)
 
  [29]
 
@@ -357,7 +357,7 @@ Ekranın alt bilgi çubuğunda en çok ihtiyaç duyulan 4 temel ölçüm değeri
 
 ### 15. Multimetre Modu
 
-![Multimetre modu](images/shared/multimeter-mode.png)
+![Multimetre modu](images/tr/multimeter-mode.png)
 
 Bu modda her iki prob da aynı anda bağımsız olarak voltaj ölçümü yapabilmektedir. Herhangi bir manuel kademe veya fonksiyon (AC/DC) seçimi yapmanıza gerek yoktur; KMY MMD-1 gelen sinyalin karakterini analiz ederek DC mi yoksa AC mi ölçüleceğine kendisi karar verir. [31]
 
@@ -373,7 +373,7 @@ Multimetre modunda da cihazın aktif sinyal çıkışı tamamen kapalıdır. Öl
 
 ### 16. Sistem Ayarları
 
-![Ayarlar](images/shared/settings-device.png)
+![Ayarlar](images/tr/settings-device.png)
 
 Yazılımın üst çubuğunda bulunan dişli simgesine tıkladığınızda genel ayarlar paneli açılır. Bu panel **Cihaz** ve **Kalibrasyon** olmak üzere iki temel sekmeden oluşur. Her iki sekmenin de üst kısmında hızlı dil değiştirme seçeneği (Türkçe / İngilizce) yer almaktadır. [32]
 
@@ -384,7 +384,7 @@ Ayrıca "Servis / Tanılama" başlığı altında; USB bağlantısı etkinken, y
 
 ### 17. Kalibrasyon Sihirbazı
 
-![Kalibrasyon girişi](images/shared/calibration-intro.png)
+![Kalibrasyon girişi](images/tr/calibration-intro.png)
 
 KMY MMD-1 kalibrasyon verileri bilgisayarda değil, **doğrudan cihazın kendi dahili belleğinde (EEPROM/Flash)** saklanır. Yazılım her açıldığında kalibrasyon tablosunu cihazın kendisinden okur. Bu sayede cihazı hangi bilgisayara ya da telefona takarsanız takın, yeniden kalibrasyon yapmanıza gerek kalmadan doğrudan kalibre edilmiş şekilde kullanmaya devam edebilirsiniz. [33]
 
@@ -410,7 +410,7 @@ KMY MMD-1 kalibrasyon verileri bilgisayarda değil, **doğrudan cihazın kendi d
 
 ### 18. Kablosuz Kullanım ve Wi-Fi Kurulumu
 
-![WiFi kurulumu](images/shared/wifi-setup.png)
+![WiFi kurulumu](images/tr/wifi-setup.png)
 
 KMY MMD-1 kablosuz ağ bağlantısını iki farklı modda destekler: [37]
 
@@ -437,7 +437,7 @@ Masaüstü Windows yazılımının sunduğu tüm ölçüm ve analiz yetenekleri 
 * **Üst Durum Şeridi (Aşağı Çekilebilir):** Bu şeride dokunduğunuzda veya aşağı doğru kaydırdığınızda genel durum paneli açılır. Burada anlık bağlantı kalitesi, varsa hata mesajları veya kilit sebepleri gösterilir. Ayrıca panel içerisinde **Araçlar**, **Ayarlar** ve **Bağlan/Bağlantıyı Kes** şeklinde üç hızlı erişim kutusu bulunur. Cihazda kritik bir uyarı veya çalışma hatası oluştuğunda bu durum paneli kendiliğinden otomatik olarak açılır. [39]
 * **Alt Kontrol Şeridi (Yukarı Çekilebilir):** Bu şeride dokunup yukarı kaydırdığınızda gelişmiş kontrol paneli açılır. Bu panel parmağınızı çektiğiniz yükseklikte sabit kalır; tamamen açık veya kapalı olmak zorunda değildir. İçerisinde masaüstü sürümdeki tüm parametre ayarları yer alır. Şerit üzerinde her zaman Eğri Testi, Osiloskop ve Multimetre geçiş butonları ile hızlı Gerilim, Frekans ve Akım Kademesi kısayolları bulunur.
 
-![Mobil arayüz](images/shared/mobile-interface.png)
+![Mobil arayüz](images/tr/mobile-interface.png)
 
  [40]
 

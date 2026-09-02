@@ -63,7 +63,7 @@ El panel frontal del dispositivo incorpora 4 entradas de conector tipo banana de
 
 Al medir cualquier componente, uno de sus terminales debe conectarse a la sonda activa (Sonda 1 o Sonda 2) y el otro al conector GND adyacente. Por ejemplo, al probar una resistencia o un diodo de dos terminales, un pin se conecta a la Sonda 1 y el otro pin al conector de chasis (GND) inmediatamente contiguo.
 
-![Vista general del dispositivo](images/shared/device-overview.svg)
+![Vista general del dispositivo](images/es/device-overview.svg)
 
 
 El panel posterior del dispositivo dispone de dos puntos de conexión:
@@ -138,7 +138,7 @@ En la Sección 9 se examinarán en detalle las firmas características del resto
 
 ### 7. Principio de Funcionamiento de la Prueba de Curva
 
-![Ventana principal](images/shared/main-window.png)
+![Ventana principal](images/es/main-window.png)
 
 En la interfaz del software, los parámetros de prueba se ubican a la izquierda, la pantalla gráfica en el centro, y las pestañas Comparación, Registro de Tarjetas y Prueba de Tarjetas en el margen derecho.
 
@@ -186,79 +186,79 @@ La tarjeta de resultados situada justo debajo de la pantalla del gráfico identi
 #### Resistencia
 Línea recta e inclinada que cruza el centro de la pantalla del gráfico. Al disminuir el valor de la resistencia, la traza adopta una inclinación cercana a la vertical; al aumentar el valor, la línea se aproxima a la horizontal. Al modificar la frecuencia, el ángulo de esta traza no experimenta ningún cambio. Esta es la característica más evidente que distingue a la resistencia de los demás componentes.
 
-![Curva de resistencia](images/shared/curve-resistor.png)
+![Curva de resistencia](images/es/curve-resistor.png)
 
 
 #### Condensador
 Genera una elipse definida en la pantalla. Al elevar la frecuencia, el área interna de la elipse se expande y se hace evidente; al disminuir la frecuencia, se contrae tendiendo a una línea delgada.
 
-![Curva de condensador](images/shared/curve-capacitor.png)
+![Curva de condensador](images/es/curve-capacitor.png)
 
 
 #### Inductor
 Es la imagen especular del condensador. Trazado también como una elipse, pero con una respuesta inversa: al incrementar la frecuencia la elipse se estrecha, mientras que al reducirla se ensancha.
 
-![Curva de inductor](images/shared/curve-inductor.png)
+![Curva de inductor](images/es/curve-inductor.png)
 
 
 #### Condensador + ESR (Resistencia Serie Equivalente)
 Elipse característica de un condensador, pero con una ligera inclinación hacia la derecha o izquierda en el gráfico. La resistencia en serie (ESR) introduce esta desviación angular en la elipse. El valor de capacitancia del condensador y los valores de resistencia serie/paralelo se indican por separado en la tarjeta de resultados.
 
-![Curva de condensador + ESR](images/shared/curve-capacitor-esr.png)
+![Curva de condensador + ESR](images/es/curve-capacitor-esr.png)
 
 
 #### Diodo
 Trazado plano en una dirección (bloqueo) y con un codo pronunciado en la dirección opuesta (conducción). La posición de este punto de codo en el eje de tensión representa el umbral de conducción (voltaje directo) del diodo. Mientras que en los diodos de silicio este umbral se sitúa en torno a 0.6 V - 0.7 V, en los diodos Schottky se desplaza hacia la izquierda (menor voltaje) y en los LEDs se sitúa visiblemente más a la derecha (mayor voltaje).
 
-![Curva de diodo](images/shared/curve-diode.png)
+![Curva de diodo](images/es/curve-diode.png)
 
 
 #### Diodo Zener
 Se aprecian codos de conducción en ambos sentidos del gráfico. La inflexión de la derecha representa el umbral directo normal del diodo, y la de la izquierda corresponde al voltaje de ruptura zener ($V_z$). Este equipo permite analizar fácilmente diodos zener de hasta 15 V; para tensiones superiores, el límite de voltaje de prueba del dispositivo resultará insuficiente.
 
-![Curva de zener](images/shared/curve-zener.png)
+![Curva de zener](images/es/curve-zener.png)
 
 
 #### Diodo TVS
 Un diodo TVS unidireccional presenta desde el punto de vista eléctrico las mismas características que un diodo zener. El dispositivo lo clasifica automáticamente como **ZENER** (la tarjeta de resultados no contiene una etiqueta "TVS" diferenciada). La ruptura simétrica en ambos sentidos de los diodos TVS bidireccionales no se ajusta exactamente a ninguna categoría estándar. Al medirlo, se puede reportar como **|Z|** o **No Definido** en la tarjeta.
 
-![Curva TVS bidireccional](images/shared/curve-tvs-bidirectional.png)
+![Curva TVS bidireccional](images/es/curve-tvs-bidirectional.png)
 
 
 #### MOSFET — Terminales Puerta-Fuente (Gate-Source)
 El terminal de puerta de los MOSFETs actúa como un condensador muy pequeño aislado del cuerpo, por lo que prácticamente no circula corriente a través de él. En MOSFETs de pequeña señal, este valor de capacitancia es tan reducido (escasos picofaradios) que la corriente resultante queda por debajo del límite de detección del equipo, mostrándose en pantalla la indicación **CIRCUITO ABIERTO**. Esto representa el comportamiento natural de la puerta y no un defecto. En MOSFETs de potencia más robustos (con capacitancias de varios nanofaradios), se puede observar una delgada elipse de **Condensador**.
 
-![Curva MOSFET Gate-Source](images/shared/curve-mosfet-gs.png)
+![Curva MOSFET Gate-Source](images/es/curve-mosfet-gs.png)
 
 
 #### MOSFET — Terminales Drenador-Fuente (Drain-Source)
 Cada MOSFET incorpora de manera intrínseca un diodo de cuerpo (body diode) resultante de su proceso de fabricación. Con la puerta en estado flotante o conectada a la Fuente, al medir Drenador-Fuente se observa una corriente que circula por dicho diodo de cuerpo y no por el canal. El dispositivo lo identifica directamente como un **DIODO** convencional, por lo general con una tensión de conducción ($V_f$) ligeramente superior a la de los diodos de señal.
 
-![Curva MOSFET Drain-Source](images/shared/curve-mosfet-ds.png)
+![Curva MOSFET Drain-Source](images/es/curve-mosfet-ds.png)
 
 
 #### Transistor — Unión Base-Emisor
 La unión Base-Emisor constituye eléctricamente una unión de diodo. El dispositivo muestra **DIODO** en la pantalla y la tensión directa ($V_f$) se sitúa de forma típica entre 0.65 V y 0.70 V.
 
-![Curva transistor Base-Emisor](images/shared/curve-transistor-be.png)
+![Curva transistor Base-Emisor](images/es/curve-transistor-be.png)
 
 
 #### Transistor — Unión Base-Colector
 La unión Base-Colector se comporta igualmente como una unión de diodo. No obstante, al ser esta unión físicamente más extensa, su voltaje de umbral suele resultar ligeramente inferior al de la unión Base-Emisor. La tarjeta de resultados muestra la indicación **DIODO**.
 
-![Curva transistor Base-Colector](images/shared/curve-transistor-bc.png)
+![Curva transistor Base-Colector](images/es/curve-transistor-bc.png)
 
 
 #### Transistor — Terminales Colector-Emisor
 
-![Curva transistor Colector-Emisor](images/shared/curve-transistor-ce.png)
+![Curva transistor Colector-Emisor](images/es/curve-transistor-ce.png)
 Si se efectúa la medición entre Colector y Emisor sin aplicar señal a la Base, ambas uniones internas permanecen bloqueadas y el dispositivo detectará un **CIRCUITO ABIERTO**. Este comportamiento es el estado natural del transistor y no representa una falla; dado que se requiere una excitación en la base para que el transistor conduzca, en estas condiciones de prueba se espera que permanezca en aislamiento.
 
 *Nota de Diseño Importante:* Al medir un componente sobre una tarjeta sin desoldarlo, la curva resultante no pertenece de forma exclusiva a ese componente; representa la combinación de las respuestas eléctricas de todos los caminos y elementos que se encuentran conectados en paralelo con él. Ante cualquier duda, levantar un solo pin del componente de la tarjeta mediante un soldador y repetir la medición ofrecerá el resultado más confiable.
 
 ### 10. Ajustes Avanzados de Medición
 
-![Panel avanzado](images/shared/advanced-panel.png)
+![Panel avanzado](images/es/advanced-panel.png)
 
 Al conmutar a la vista **Avanzada** en la interfaz, los tres parámetros del panel Simple dejan de controlarse por niveles y pasan a regularse de forma milimétrica mediante barras deslizantes de precisión (Voltaje 0.1 - 15 V, Frecuencia 1 - 1000 Hz). En este modo se ofrecen de forma complementaria las siguientes características avanzadas de control:
 
@@ -296,7 +296,7 @@ La visualización de estas advertencias no implica que la medición sea del todo
 
 ### 12. Funciones de Comparación
 
-![Panel de comparación](images/shared/compare-panel.png)
+![Panel de comparación](images/es/compare-panel.png)
 
 La pestaña **Comparación** del margen derecho despliega un práctico menú lateral. Se dispone de tres modos de operación:
 
@@ -316,7 +316,7 @@ Este es el método idóneo para verificar modelos específicos de tarjetas que s
 
 #### Grabación Paso a Paso de una Tarjeta de Referencia:
 
-![Interfaz de registro de tarjeta](images/shared/board-record-interface.png)
+![Interfaz de registro de tarjeta](images/es/board-record-interface.png)
 1. **Crear una Carpeta de Proyecto:** Seleccione un directorio de trabajo. La imagen de la tarjeta y todos los puntos de prueba se almacenarán en esta carpeta única, lo que permite copiar y trasladar el proyecto completo a otro ordenador.
 2. **Agregar Imagen de la Tarjeta:** Suba una fotografía nítida y sin sombras de la tarjeta, tomada directamente desde arriba. Una iluminación uniforme facilita la ubicación precisa de los puntos de prueba sobre la imagen.
 3. **Definir Puntos:** Tome contacto con la sonda física sobre el punto deseado de la placa. Al mismo tiempo, haga clic en esa misma ubicación en la foto de la pantalla. Asigne un nombre descriptivo al punto (se recomienda utilizar la nomenclatura original de la placa: R14, C7, U3-1) y pulse **Guardar Punto**.
@@ -327,7 +327,7 @@ Este es el método idóneo para verificar modelos específicos de tarjetas que s
 #### Prueba de una Tarjeta Registrada:
 Pulse el botón **Iniciar Prueba** y recorra los puntos en la secuencia definida. Cada punto se mide, se compara con su referencia y se marca como aprobado o fallido. Los puntos con discrepancias se resaltan en **rojo** sobre la fotografía de la tarjeta. En lugar de una lista de texto compleja, obtendrá un mapa visual del fallo. Puede pausar y omitir puntos, y al finalizar, emplear la opción **Probar Restantes** para retomar solo aquellos que quedaron incompletos.
 
-![Interfaz de prueba de tarjeta](images/shared/board-test-interface.png)
+![Interfaz de prueba de tarjeta](images/es/board-test-interface.png)
 
 
 * **Modo Automático:** Avanza de forma automática al siguiente punto una vez que la coincidencia de la medición es exitosa. Active esta opción cuando prefiera centrar la vista en la placa física y en las sondas en lugar de en la pantalla.
@@ -345,7 +345,7 @@ Al conmutar al modo osciloscopio, la salida de señal del dispositivo se desacti
 
 El dispositivo muestrea de forma fija a **5.5 kS/s** (5500 muestras por segundo) debido a límites físicos del hardware. Modificar la base de tiempos (timebase) en el programa no altera esta tasa de muestreo; únicamente modifica la ventana temporal que se visualiza en pantalla. El resultado práctico de esto es que el KMY MMD-1 se clasifica como un **osciloscopio de baja frecuencia**. Resulta idóneo para rizado en fuentes de alimentación, control de motores y señales por debajo de la banda de audio; no obstante, por encima de 1 kHz, la fidelidad de la forma de onda perderá confiabilidad.
 
-![Modo osciloscopio](images/shared/oscilloscope-mode.png)
+![Modo osciloscopio](images/es/oscilloscope-mode.png)
 
 
 * **AUTO:** Analiza la señal entrante y configura de forma automática la base de tiempos, la escala vertical de voltaje y el nivel de disparo por usted. Si no se detecta una señal significativa, mantiene los ajustes previos.
@@ -359,6 +359,8 @@ Las flechas indicadoras de nivel de referencia y de disparo en los bordes de la 
 Cuatro mediciones se presentan de forma inmediata en la barra de información inferior: **Vpp** (tensión pico a pico), **Avg** (tensión promedio), **Vrms** (tensión eficaz) y **Frecuencia**. La base de datos incorpora un total de 11 parámetros de medida; puede agregar o retirar los que desee de esta barra.
 
 ### 15. Modo Multímetro
+
+![Modo multímetro](images/es/multimeter-mode.png)
 
 En este modo, ambas sondas pueden realizar lecturas de tensión de forma independiente al mismo tiempo. No se dispone de botones de rango manual o de selección de función (CA/CC). El KMY MMD-1 analiza el carácter de la señal para decidir si se mide en CC o CA.
 
@@ -374,7 +376,7 @@ También en este modo la salida activa de señal de prueba está completamente a
 
 ### 16. Ajustes del Sistema
 
-![Ajustes](images/shared/settings-device.png)
+![Ajustes](images/es/settings-device.png)
 
 Al pulsar en el icono de engranaje de la barra superior se abre el panel de ajustes generales. Este consta de dos pestañas básicas: **Dispositivo** y **Calibración**. Ambas pestañas incorporan una opción rápida de cambio de idioma (Turco / Inglés) en la parte superior.
 
@@ -385,7 +387,7 @@ Adicionalmente, bajo el apartado "Servicio / Diagnóstico", se incluye una herra
 
 ### 17. Asistente de Calibración
 
-![Inicio de calibración](images/shared/calibration-intro.png)
+![Inicio de calibración](images/es/calibration-intro.png)
 
 Los datos de calibración del KMY MMD-1 se graban **directamente en la memoria interna no volátil del equipo (EEPROM/Flash)**, no en el ordenador. El software lee esta tabla de calibración desde el propio dispositivo en cada inicio. De este modo, sin importar el ordenador o teléfono al que se conecte el dispositivo, se podrá utilizar de forma directa en su estado calibrado sin necesidad de repetir el proceso.
 
@@ -414,7 +416,7 @@ Las primeras tres fases de la calibración van seguidas de una única ventana de
 
 ### 18. Uso Inalámbrico y Configuración Wi-Fi
 
-![Configuración Wi-Fi](images/shared/wifi-setup.png)
+![Configuración Wi-Fi](images/es/wifi-setup.png)
 
 El KMY MMD-1 admite la conexión de red inalámbrica bajo dos modalidades diferenciadas:
 
@@ -438,7 +440,7 @@ Si tiene la certeza de que el dispositivo se encuentra asociado a la red pero no
 
 La misma aplicación empleada en Windows se ejecuta en Android, sin pérdida de funciones de análisis y medición. El diseño se ha adaptado para pantallas móviles estrechas: existen barras de control permanentes en los márgenes superior e inferior de la zona gráfica.
 
-![Interfaz móvil](images/shared/mobile-interface.png)
+![Interfaz móvil](images/es/mobile-interface.png)
 
 
 * **Desplegar la Barra de Estado Superior:** Al deslizar hacia abajo esta barra se accede al panel de estado. Este muestra el estado de la conexión, mensajes de error o bloqueo (si los hubiera) y tres apartados rápidos: **Herramientas**, **Ajustes** y **Conectar/Desconectar**. Ante advertencias o errores relevantes, este panel se despliega de forma automática.

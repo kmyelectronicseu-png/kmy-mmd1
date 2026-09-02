@@ -63,7 +63,7 @@ There are 4 pieces of 4 mm banana-type socket inputs on the front panel of the d
 
 During the measurement of any component, one terminal of the component must be connected to the active probe (Probe 1 or Probe 2), and the other terminal must be connected to the adjacent GND socket. For example, when testing a two-terminal resistor or diode, one terminal is connected to Probe 1, and the other terminal is connected to the adjacent chassis (GND) line.
 
-![Device overview](images/shared/device-overview.svg)
+![Device overview](images/en/device-overview.svg)
 
 
 There are two connection points on the rear panel of the device:
@@ -138,7 +138,7 @@ In Section 9, the characteristic signatures of all other components on the scree
 
 ### 7. Working Principle of Curve Testing
 
-![Main window](images/shared/main-window.png)
+![Main window](images/en/main-window.png)
 
 In the software interface; the test parameters are located on the left side, the graph screen in the center, and the Comparison, Board Recording, and Board Testing tabs on the right edge.
 
@@ -186,79 +186,79 @@ The result card right below the graph screen names the component detected by the
 #### Resistor
 A straight, angled line crossing the graph screen exactly in the middle. As the resistor value decreases, the line takes an angle close to vertical; as the resistor increases, the line flattens horizontally. When the frequency is changed, the angle of this line never changes. This is the clearest feature that distinguishes the resistor from all other components.
 
-![Resistor curve](images/shared/curve-resistor.png)
+![Resistor curve](images/en/curve-resistor.png)
 
 
 #### Capacitor
 Forms a clear ellipse on the screen. When the frequency is increased, the inside of the ellipse opens and becomes distinct, whereas when the frequency is decreased, it closes toward a thin line.
 
-![Capacitor curve](images/shared/curve-capacitor.png)
+![Capacitor curve](images/en/curve-capacitor.png)
 
 
 #### Inductor
 The exact mirror image of the capacitor. It also draws an ellipse, but its response is in the opposite direction: when the frequency is increased, the ellipse narrows, whereas when the frequency decreases, it widens.
 
-![Inductor curve](images/shared/curve-inductor.png)
+![Inductor curve](images/en/curve-inductor.png)
 
 
 #### Capacitor + ESR (Equivalent Series Resistance)
 The characteristic ellipse of a capacitor, but it stands slightly tilted to the right or left on the graph. The series resistance (ESR) here makes the ellipse angled. The capacitance value of the capacitor and the parallel/series resistance values are shown separately on the result card.
 
-![Capacitor + ESR curve](images/shared/curve-capacitor-esr.png)
+![Capacitor + ESR curve](images/en/curve-capacitor-esr.png)
 
 
 #### Diode
 Forms a flat line in one direction (cut-off) and a distinct "knee" shape in the other direction (conduction). The position of this knee point on the voltage axis is the conduction threshold (forward voltage) of the diode. While this threshold is around 0.6 V - 0.7 V in silicon diodes, it is further to the left (at lower voltage) in Schottky diodes, and distinctly further to the right (at higher voltage) in LEDs.
 
-![Diode curve](images/shared/curve-diode.png)
+![Diode curve](images/en/curve-diode.png)
 
 
 #### Zener Diode
 Knee breaks are observed in both directions of the graph. The break on the right shows the normal conduction threshold of the diode, and the break on the left shows the zener breakdown voltage ($V_z$). Zener diodes up to 15 V can be easily analyzed with this device; for higher voltage zeners, the test voltage limit of the device will not be sufficient.
 
-![Zener curve](images/shared/curve-zener.png)
+![Zener curve](images/en/curve-zener.png)
 
 
 #### TVS Diode
 A uni-directional TVS diode exhibits electrically the exact same characteristics as a zener diode. The device also automatically classifies it as **ZENER** (there is no separate "TVS" label on the result card). The symmetric breakdown of bi-directional TVS diodes in both directions does not fit perfectly into any of the standard component classes. When measured, it may be reported as **|Z|** or **Undefined** on the card.
 
-![Bidirectional TVS curve](images/shared/curve-tvs-bidirectional.png)
+![Bidirectional TVS curve](images/en/curve-tvs-bidirectional.png)
 
 
 #### MOSFET — Gate-Source Terminals
 The gate terminal of MOSFETs is like a very small capacitor insulated from the body, and almost no current passes through it. In small-signal MOSFETs, this capacitance value is so low (a few picofarads) that the flowing current remains below the detection limit of the device, and the card displays **OPEN CIRCUIT**. This is not a defect but the natural state of the gate. In more powerful power MOSFETs (with a capacitance of a few nanofarads), a thin **Capacitor** ellipse can be observed.
 
-![MOSFET Gate-Source curve](images/shared/curve-mosfet-gs.png)
+![MOSFET Gate-Source curve](images/en/curve-mosfet-gs.png)
 
 
 #### MOSFET — Drain-Source Terminals
 Every MOSFET naturally has a body diode formed during production. When the gate is floating or connected to the Source, and you contact Drain-Source, a current is observed passing through this body diode rather than the channel. The device recognizes it directly as a standard **DIODE**; usually with a slightly higher $V_f$ compared to signal diodes.
 
-![MOSFET Drain-Source curve](images/shared/curve-mosfet-ds.png)
+![MOSFET Drain-Source curve](images/en/curve-mosfet-ds.png)
 
 
 #### Transistor — Base-Emitter Junction
 The Base-Emitter junction is electrically a diode junction. The device writes **DIODE** on the screen, and the forward voltage ($V_f$) is typically measured between 0.65 V and 0.70 V.
 
-![Transistor Base-Emitter curve](images/shared/curve-transistor-be.png)
+![Transistor Base-Emitter curve](images/en/curve-transistor-be.png)
 
 
 #### Transistor — Base-Collector Junction
 The Base-Collector junction is similarly a diode junction. However, because this junction is physically spread over a larger area, its threshold voltage generally turns out to be slightly lower than the Base-Emitter junction. **DIODE** is displayed on the result card.
 
-![Transistor Base-Collector curve](images/shared/curve-transistor-bc.png)
+![Transistor Base-Collector curve](images/en/curve-transistor-bc.png)
 
 
 #### Transistor — Collector-Emitter Terminals
 
-![Transistor Collector-Emitter curve](images/shared/curve-transistor-ce.png)
+![Transistor Collector-Emitter curve](images/en/curve-transistor-ce.png)
 If Collector-Emitter is measured without touching the Base, both internal junctions remain closed, and the device detects an **OPEN CIRCUIT**. This is not a defect but the natural state of the transistor; since base triggering is required for the transistor to conduct, it is normally expected to be in an insulating state under these test conditions.
 
 *Important Design Note:* When measuring a component on a board without desoldering it, the curve observed is not the curve of that component alone; it is the sum of the electrical responses of all other paths and elements connected in parallel with it. In case of doubt, lifting a single pin of the component from the board with a soldering iron and repeating the measurement will provide the most reliable result.
 
 ### 10. Advanced Measurement Settings
 
-![Advanced panel](images/shared/advanced-panel.png)
+![Advanced panel](images/en/advanced-panel.png)
 
 When switching to the **Advanced** view in the interface, the three parameters in the Simple panel are no longer step-based but can be controlled millimetrically with precise slider bars (Voltage 0.1 - 15 V, Frequency 1 - 1000 Hz). In this mode, the following advanced features are additionally offered to your control:
 
@@ -296,7 +296,7 @@ Seeing these warnings does not mean the measurement is completely incorrect. It 
 
 ### 12. Comparison Functions
 
-![Comparison panel](images/shared/compare-panel.png)
+![Comparison panel](images/en/compare-panel.png)
 
 The **Comparison** tab on the right edge opens a practical side drawer. Three modes are available:
 
@@ -316,7 +316,7 @@ This is the most ideal method for testing specific board models that you will re
 
 #### Step-by-Step Recording of a Board Reference:
 
-![Board recording interface](images/shared/board-record-interface.png)
+![Board recording interface](images/en/board-record-interface.png)
 1. **Create a Project Folder:** Select a working folder for yourself. The image of the board and all test points are kept in this single folder; you can copy and carry the folder as a whole to another computer.
 2. **Add a Board Image:** Upload a clear, shadowless photograph of the board taken from directly above. A photo taken under flat, uniform lighting makes it easier to position the test points accurately on the image.
 3. **Define Points:** Touch the test probe to the targeted point on the physical board. At the same time, click on that location on the board photo on the software screen. Give the point a descriptive name (it is recommended to use the board's own markings: R14, C7, U3-1) and click **Save Point**.
@@ -327,7 +327,7 @@ This is the most ideal method for testing specific board models that you will re
 #### Testing a Recorded Board:
 Click the **Start Test** button and visit the points in sequence. Each point is measured, compared with its reference, and marked as passed or failed. Mismatched points appear in **red** on the board photograph. Instead of a tedious text list, you obtain a visual map of the fault. You can pause and skip points, and after finishing, use the **Test Remaining** option to return only to the incomplete ones.
 
-![Board test interface](images/shared/board-test-interface.png)
+![Board test interface](images/en/board-test-interface.png)
 
 
 * **Auto Mode:** Automatically proceeds to the next point when the point match is successful. Enable this when you want to look at the board rather than the screen while holding the probes.
@@ -345,7 +345,7 @@ When switching to the oscilloscope mode, the signal output of the device is comp
 
 The device always samples at **5.5 kS/s** (5500 samples per second) due to hardware limits. Changing the timebase in the program does not alter this sampling rate; it only changes the time window displayed on the screen. The practical result of this is that the KMY MMD-1 is a **low-frequency oscilloscope**. It works perfectly for power supply ripples, motor drives, and signals below the audio band, but above 1 kHz, the shape accuracy of the wave will start to become unreliable.
 
-![Oscilloscope mode](images/shared/oscilloscope-mode.png)
+![Oscilloscope mode](images/en/oscilloscope-mode.png)
 
 
 * **AUTO:** Analyzes the incoming signal and automatically sets the timebase, vertical voltage scale, and trigger level for you. If no meaningful signal is detected, it does not touch the settings.
@@ -359,6 +359,8 @@ The baseline arrows and the trigger level arrow on the screen edges can be direc
 Four measurements come ready on the lower information bar: **Vpp** (peak-to-peak voltage), **Avg** (average voltage), **Vrms** (effective voltage), and **Frequency**. There are 11 measurement parameters in total in the database; you can add or remove any parameters you wish to this bar.
 
 ### 15. Multimeter Mode
+
+![Multimeter mode](images/en/multimeter-mode.png)
 
 In this mode, both probes can read voltage independently at the same time. There are no manual range or function (AC/DC) selection buttons. The KMY MMD-1 analyzes the incoming signal to decide whether it should be measured as DC or AC.
 
@@ -374,7 +376,7 @@ In this mode as well, the active test signal output is completely turned off. Do
 
 ### 16. System Settings
 
-![Settings](images/shared/settings-device.png)
+![Settings](images/en/settings-device.png)
 
 Clicking on the gear icon in the top bar opens the general settings panel. It consists of two basic tabs: **Device** and **Calibration**. Both tabs feature a quick language selection option (Turkish / English) at the top.
 
@@ -385,7 +387,7 @@ Additionally, under the "Service / Diagnostics" heading, there is an emergency t
 
 ### 17. Calibration Wizard
 
-![Calibration intro](images/shared/calibration-intro.png)
+![Calibration intro](images/en/calibration-intro.png)
 
 The calibration data of the KMY MMD-1 is stored **directly in the device's own internal non-volatile memory (EEPROM/Flash)**, not on the computer. The software reads this calibration table from the device itself at every startup. In this way, no matter which computer or phone you plug the device into, you can continue to use it directly in its calibrated state without needing to recalibrate.
 
@@ -414,7 +416,7 @@ The first three stages of calibration are followed by a single confirmation wind
 
 ### 18. Wireless Usage and Wi-Fi Setup
 
-![Wi-Fi setup](images/shared/wifi-setup.png)
+![Wi-Fi setup](images/en/wifi-setup.png)
 
 The KMY MMD-1 supports wireless network connection in two different modes:
 
@@ -438,7 +440,7 @@ If you are sure that the device is connected to the network but you cannot see i
 
 The exact same application used in Windows runs on Android, with no functional deficiency in terms of measurement and analysis. The layout is optimized for narrow mobile screens: there are thin bars that are always visible at the top and bottom of the graph area.
 
-![Mobile interface](images/shared/mobile-interface.png)
+![Mobile interface](images/en/mobile-interface.png)
 
 
 * **Pulling Down the Top Status Bar:** Pulling down this bar opens the status panel. It contains the connection status, error or lock reason (if any), and three boxes: **Tools**, **Settings**, and **Connect/Disconnect**. When there is an important warning or error, this panel opens automatically.

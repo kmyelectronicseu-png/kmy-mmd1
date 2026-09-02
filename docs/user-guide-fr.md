@@ -63,7 +63,7 @@ Il y a 4 entrées de prise de type banane de 4 mm sur le panneau avant de l'appa
 
 Lors de la mesure de n'importe quel composant, une borne du composant doit être connectée à la sonde active (Sonde 1 ou Sonde 2), et l'autre borne doit être connectée à la prise GND adjacente. Par exemple, lors du test d'une résistance ou d'une diode à deux bornes, une borne est connectée à la Sonde 1, et l'autre borne est connectée à la ligne de châssis (GND) adjacente.
 
-![Vue d'ensemble de l'appareil](images/shared/device-overview.svg)
+![Vue d'ensemble de l'appareil](images/fr/device-overview.svg)
 
 
 Il y a deux points de connexion sur le panneau arrière de l'appareil :
@@ -138,7 +138,7 @@ Dans la Section 9, les signatures caractéristiques de tous les autres composant
 
 ### 7. Principe de fonctionnement du test de courbe
 
-![Fenêtre principale](images/shared/main-window.png)
+![Fenêtre principale](images/fr/main-window.png)
 
 Dans l'interface logicielle ; les paramètres de test sont situés sur le côté gauche, l'écran graphique au centre, et les onglets Comparaison, Enregistrement de cartes et Test de cartes sur le bord droit.
 
@@ -186,79 +186,79 @@ La carte de résultats située juste en dessous de l'écran du graphique nomme l
 #### Résistance
 Une ligne droite et inclinée traversant l'écran du graphique exactement au milieu. À mesure que la valeur de la résistance diminue, la ligne prend un angle proche de la verticale ; à mesure que la résistance augmente, la ligne s'aplatit horizontalement. Lorsque la fréquence est modifiée, l'angle de cette ligne ne change jamais. C'est la caractéristique la plus claire qui distingue la résistance de tous les autres composants.
 
-![Courbe de résistance](images/shared/curve-resistor.png)
+![Courbe de résistance](images/fr/curve-resistor.png)
 
 
 #### Condensateur
 Forme une ellipse claire sur l'écran. Lorsque la fréquence est augmentée, l'intérieur de l'ellipse s'ouvre et devient distinct, tandis que lorsque la fréquence est diminuée, il se ferme vers une ligne fine.
 
-![Courbe de condensateur](images/shared/curve-capacitor.png)
+![Courbe de condensateur](images/fr/curve-capacitor.png)
 
 
 #### Inductance
 L'image miroir exacte du condensateur. Elle trace également une ellipse, mais sa réponse est dans la direction opposée : lorsque la fréquence est augmentée, l'ellipse se rétrécit, tandis que lorsque la fréquence diminue, elle s'élargit.
 
-![Courbe d'inductance](images/shared/curve-inductor.png)
+![Courbe d'inductance](images/fr/curve-inductor.png)
 
 
 #### Condensateur + ESR (Résistance Série Équivalente)
 L'ellipse caractéristique d'un condensateur, mais elle est légèrement inclinée vers la droite ou la gauche sur le graphique. La résistance série (ESR) ici rend l'ellipse inclinée. La valeur de capacité du condensateur et les valeurs de résistance série/parallèle sont affichées séparément sur la carte de résultats.
 
-![Courbe condensateur + ESR](images/shared/curve-capacitor-esr.png)
+![Courbe condensateur + ESR](images/fr/curve-capacitor-esr.png)
 
 
 #### Diode
 Forme une ligne plate dans un sens (blocage) et une forme de "coude" distincte dans l'autre sens (conduction). La position de ce point de coude sur l'axe de tension est le seuil de conduction (tension directe) de la diode. Alors que ce seuil est d'environ 0,6 V - 0,7 V pour les diodes au silicium, il est plus à gauche (à une tension plus basse) pour les diodes Schottky, et nettement plus à droite (à une tension plus élevée) pour les LED.
 
-![Courbe de diode](images/shared/curve-diode.png)
+![Courbe de diode](images/fr/curve-diode.png)
 
 
 #### Diode Zener
 Des coudes de conduction sont observés dans les deux sens du graphique. Le coude de droite montre le seuil de conduction normal de la diode, et le coude de gauche montre la tension de claquage zener ($V_z$). Les diodes zener jusqu'à 15 V peuvent être facilement analysées avec cet appareil ; pour les zeners à tension supérieure, la limite de tension de test de l'appareil ne sera pas suffisante.
 
-![Courbe de zener](images/shared/curve-zener.png)
+![Courbe de zener](images/fr/curve-zener.png)
 
 
 #### Diode TVS
 Une diode TVS unidirectionnelle présente électriquement exactement les mêmes caractéristiques qu'une diode zener. L'appareil la classe également automatiquement comme **ZENER** (il n'y a pas d'étiquette séparée "TVS" sur la carte de résultats). Le claquage symétrique des diodes TVS bidirectionnelles dans les deux sens ne correspond parfaitement à aucune des classes de composants standard. Lors de la mesure, il peut être indiqué **|Z|** ou **Indéfini** sur la carte.
 
-![Courbe TVS bidirectionnelle](images/shared/curve-tvs-bidirectional.png)
+![Courbe TVS bidirectionnelle](images/fr/curve-tvs-bidirectional.png)
 
 
 #### MOSFET — Bornes Grille-Source (Gate-Source)
 La borne de grille des MOSFET est comme un très petit condensateur isolé du corps, et presque aucun courant ne la traverse. Dans les MOSFET petits signaux, cette valeur de capacité est si faible (quelques picofarads) que le courant circulant reste inférieur à la limite de détection de l'appareil, et la carte affiche **CIRCUIT OUVERT**. Ce n'est pas un défaut mais l'état naturel de la grille. Dans les MOSFET de puissance plus puissants (avec une capacité de quelques nanofarads), une fine ellipse de **Condensateur** peut être observée.
 
-![Courbe MOSFET Gate-Source](images/shared/curve-mosfet-gs.png)
+![Courbe MOSFET Gate-Source](images/fr/curve-mosfet-gs.png)
 
 
 #### MOSFET — Bornes Drain-Source
 Chaque MOSFET possède naturellement une diode de corps (body diode) formée lors de la production. Lorsque la grille est flottante ou connectée à la Source, et que vous contactez Drain-Source, un courant est observé traversant cette diode de corps plutôt que le canal. L'appareil la reconnaît directement comme une **DIODE** standard ; généralement avec une tension directe ($V_f$) légèrement supérieure à celle des diodes de signal.
 
-![Courbe MOSFET Drain-Source](images/shared/curve-mosfet-ds.png)
+![Courbe MOSFET Drain-Source](images/fr/curve-mosfet-ds.png)
 
 
 #### Transistor — Jonction Base-Émetteur
 La jonction Base-Émetteur est électriquement une jonction de diode. L'appareil écrit **DIODE** sur l'écran, et la tension directe ($V_f$) est généralement mesurée entre 0,65 V et 0,70 V.
 
-![Courbe transistor Base-Émetteur](images/shared/curve-transistor-be.png)
+![Courbe transistor Base-Émetteur](images/fr/curve-transistor-be.png)
 
 
 #### Transistor — Jonction Base-Collecteur
 La jonction Base-Collecteur est de même une jonction de diode. Cependant, comme cette jonction est physiquement répartie sur une zone plus grande, sa tension de seuil s'avère généralement légèrement inférieure à celle de la jonction Base-Émetteur. **DIODE** est affiché sur la carte de résultats.
 
-![Courbe transistor Base-Collecteur](images/shared/curve-transistor-bc.png)
+![Courbe transistor Base-Collecteur](images/fr/curve-transistor-bc.png)
 
 
 #### Transistor — Bornes Collecteur-Émetteur
 
-![Courbe transistor Collecteur-Émetteur](images/shared/curve-transistor-ce.png)
+![Courbe transistor Collecteur-Émetteur](images/fr/curve-transistor-ce.png)
 Si le Collecteur-Émetteur est mesuré sans toucher à la Base, les deux jonctions internes restent fermées, et l'appareil détecte un **CIRCUIT OUVERT**. Ce n'est pas un défaut mais l'état naturel du transistor ; comme une excitation de base est requise pour que le transistor conduise, il est normalement attendu qu'il soit dans un état isolant dans ces conditions de test.
 
 *Note importante sur la conception :* Lors de la mesure d'un composant sur une carte sans le dessouder, la courbe observée n'est pas la courbe de ce composant seul ; elle est la somme des réponses électriques de tous les autres chemins et éléments connectés en parallèle avec lui. En cas de doute, soulever une seule broche du composant de la carte avec un fer à souder et répéter la mesure fournira le résultat le plus fiable.
 
 ### 10. Paramètres de mesure avancés
 
-![Panneau avancé](images/shared/advanced-panel.png)
+![Panneau avancé](images/fr/advanced-panel.png)
 
 Lors du passage à la vue **Avancée** dans l'interface, les trois paramètres du panneau Simple ne sont plus basés sur des étapes mais peuvent être contrôlés au millimètre près grâce à des curseurs précis (Tension 0,1 - 15 V, Fréquence 1 - 1000 Hz). Dans ce mode, les fonctionnalités avancées suivantes sont en outre offertes à votre contrôle :
 
@@ -296,7 +296,7 @@ Voir ces avertissements ne signifie pas que la mesure est complètement incorrec
 
 ### 12. Fonctions de comparaison
 
-![Panneau de comparaison](images/shared/compare-panel.png)
+![Panneau de comparaison](images/fr/compare-panel.png)
 
 L'onglet **Comparaison** sur le bord droit ouvre un tiroir latéral pratique. Trois modes sont disponibles :
 
@@ -316,7 +316,7 @@ C'est la méthode idéale pour tester des modèles de cartes spécifiques que vo
 
 #### Enregistrement pas à pas d'une référence de carte :
 
-![Interface d'enregistrement de carte](images/shared/board-record-interface.png)
+![Interface d'enregistrement de carte](images/fr/board-record-interface.png)
 1. **Créer un dossier de projet :** Sélectionnez un dossier de travail pour vous-même. L'image de la carte et tous les points de test sont conservés dans ce seul dossier ; vous pouvez copier et transporter le dossier dans son ensemble vers un autre ordinateur.
 2. **Ajouter une image de la carte :** Téléchargez une photographie nette et sans ombre de la carte prise directement du dessus. Une photo prise sous un éclairage plat et uniforme facilite le positionnement précis des points de test sur l'image.
 3. **Définir les points :** Touchez le point de test cible sur la carte physique avec la sonde de test. En même temps, cliquez sur cet emplacement sur la photo de la carte sur l'écran du logiciel. Donnez au point un nom descriptif (il est recommandé d'utiliser les marquages propres à la carte : R14, C7, U3-1) et cliquez sur **Enregistrer le point**.
@@ -327,7 +327,7 @@ C'est la méthode idéale pour tester des modèles de cartes spécifiques que vo
 #### Test d'une carte enregistrée :
 Cliquez sur le bouton **Démarrer le test** et parcourez les points dans l'ordre. Chaque point est mesuré, comparé à sa référence et marqué comme réussi ou échoué. Les points non correspondants apparaissent en **rouge** sur la photographie de la carte. Au lieu d'une liste de texte fastidieuse, vous obtenez une carte visuelle de la panne. Vous pouvez mettre le test en pause et sauter des points, et après avoir terminé, utiliser l'option **Tester les restants** pour revenir uniquement aux points incomplets.
 
-![Interface de test de carte](images/shared/board-test-interface.png)
+![Interface de test de carte](images/fr/board-test-interface.png)
 
 
 * **Mode Auto :** Passe automatiquement au point suivant lorsque la correspondance du point est réussie. Activez ce mode lorsque vous souhaitez regarder la carte plutôt que l'écran tout en tenant les sondes.
@@ -345,7 +345,7 @@ Lors du passage en mode oscilloscope, la sortie de signal de l'appareil est comp
 
 L'appareil échantillonne toujours à **5,5 kS/s** (5500 échantillons par seconde) en raison des limites du matériel. Modifier la base de temps (timebase) dans le programme ne change pas ce taux d'échantillonnage ; cela ne fait que modifier la fenêtre temporelle affichée sur l'écran. Le résultat pratique est que le KMY MMD-1 est un **oscilloscope basse fréquence**. Il fonctionne parfaitement pour les ondulations d'alimentation, les commandes de moteurs et les signaux inférieurs à la bande audio, mais au-dessus de 1 kHz, la précision de forme de l'onde commencera à devenir peu fiable.
 
-![Mode oscilloscope](images/shared/oscilloscope-mode.png)
+![Mode oscilloscope](images/fr/oscilloscope-mode.png)
 
 
 * **AUTO :** Analyse le signal entrant et règle automatiquement pour vous la base de temps, l'échelle verticale de tension et le niveau de déclenchement. Si aucun signal significatif n'est détecté, il ne touche pas aux réglages.
@@ -359,6 +359,8 @@ Les flèches de ligne de base et la flèche de niveau de déclenchement sur les 
 Quatre mesures s'affichent immédiatement sur la barre d'information inférieure : **Vpp** (tension crête à crête), **Avg** (tension moyenne), **Vrms** (tension efficace) et **Fréquence**. Il y a 11 paramètres de mesure au total dans la base de données ; vous pouvez ajouter ou supprimer tous les paramètres de votre choix sur cette barre.
 
 ### 15. Mode Multimètre
+
+![Mode multimètre](images/fr/multimeter-mode.png)
 
 Dans ce mode, les deux sondes peuvent lire la tension indépendamment et en même temps. Il n'y a aucun bouton de sélection manuelle de gamme ou de fonction (CA/CC). Le KMY MMD-1 analyse le signal entrant pour décider s'il doit être mesuré en CC ou en CA.
 
@@ -374,7 +376,7 @@ Dans ce mode également, la sortie active de signal de test est complètement d�
 
 ### 16. Paramètres Système
 
-![Paramètres](images/shared/settings-device.png)
+![Paramètres](images/fr/settings-device.png)
 
 Cliquer sur l'icône d'engrenage dans la barre supérieure ouvre le panneau des paramètres généraux. Il se compose de deux onglets de base : **Appareil** et **Étalonnage**. Les deux onglets disposent d'une option de sélection rapide de la langue (Turc / Anglais) en haut.
 
@@ -385,7 +387,7 @@ De plus, sous la rubrique "Service / Diagnostic", il existe un outil d'urgence q
 
 ### 17. Assistant d'étalonnage
 
-![Introduction à l'étalonnage](images/shared/calibration-intro.png)
+![Introduction à l'étalonnage](images/fr/calibration-intro.png)
 
 Les données d'étalonnage du KMY MMD-1 sont stockées **directement dans la mémoire non volatile interne de l'appareil lui-même (EEPROM/Flash)**, et non sur l'ordinateur. Le logiciel lit cette table d'étalonnage à partir de l'appareil lui-même à chaque démarrage. De cette façon, quel que soit l'ordinateur ou le téléphone auquel vous connectez l'appareil, vous pouvez continuer à l'utiliser directement dans son état étalonné sans avoir besoin de le réétalonner.
 
@@ -414,7 +416,7 @@ Les trois premières étapes de l'étalonnage sont suivies d'une seule fenêtre 
 
 ### 18. Utilisation sans fil et configuration Wi-Fi
 
-![Configuration Wi-Fi](images/shared/wifi-setup.png)
+![Configuration Wi-Fi](images/fr/wifi-setup.png)
 
 Le KMY MMD-1 prend en charge la connexion réseau sans fil selon deux modes différents :
 
@@ -438,7 +440,7 @@ Si vous êtes sûr que l'appareil est connecté au réseau mais que vous ne le v
 
 La même application utilisée sous Windows fonctionne sous Android, sans aucune déficience fonctionnelle en termes de mesure et d'analyse. La disposition est optimisée pour les écrans mobiles étroits : des barres fines sont toujours visibles en haut et en bas de la zone graphique.
 
-![Interface mobile](images/shared/mobile-interface.png)
+![Interface mobile](images/fr/mobile-interface.png)
 
 
 * **Dérouler la barre d'état supérieure :** Dérouler cette barre vers le bas ouvre le panneau d'état. Il contient l'état de la connexion, le message d'erreur ou le motif de verrouillage (le cas échéant), et trois boîtes : **Outils**, **Paramètres**, et **Se connecter/Se déconnecter**. En cas d'avertissement ou d'erreur important, ce panneau s'ouvre automatiquement.

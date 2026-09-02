@@ -63,7 +63,7 @@ Auf der Vorderseite des Geräts befinden sich 4 Anschlüsse für 4-mm-Bananenste
 
 Bei der Messung eines Bauteils muss ein Anschluss des Bauteils mit der aktiven Prüfspitze (Sonde 1 oder Sonde 2) und der andere Anschluss mit der benachbarten GND-Buchse verbunden werden. Beim Testen eines zweipoligen Widerstands oder einer Diode wird beispielsweise ein Pin an die Sonde 1 und der andere Pin an die benachbarte Masseleitung (GND) angeschlossen.
 
-![Geräteübersicht](images/shared/device-overview.svg)
+![Geräteübersicht](images/de/device-overview.svg)
 
 
 Auf der Rückseite des Geräts befinden sich zwei Anschlüsse:
@@ -138,7 +138,7 @@ In Abschnitt 9 werden die charakteristischen Signaturen aller anderen Bauteile a
 
 ### 7. Funktionsprinzip der Kennlinienprüfung
 
-![Hauptfenster](images/shared/main-window.png)
+![Hauptfenster](images/de/main-window.png)
 
 In der Softwareschnittstelle befinden sich die Testparameter auf der linken Seite, das Diagrammfenster in der Mitte und die Registerkarten Vergleich, Platinenaufzeichnung und Platinentest am rechten Rand.
 
@@ -186,79 +186,79 @@ Die Ergebniskarte direkt unter dem Grafikbildschirm benennt das vom Gerät erkan
 #### Widerstand
 Eine gerade, schräge Linie, die den Grafikbildschirm genau in der Mitte kreuzt. Wenn der Widerstandswert sinkt, nimmt die Linie einen Winkel nahe der Vertikalen an; steigt der Widerstand, flacht die Linie horizontal ab. Bei Frequenzänderungen ändert sich der Winkel dieser Linie nie. Dies ist das klarste Merkmal, das den Widerstand von allen anderen Bauteilen unterscheidet.
 
-![Widerstandskurve](images/shared/curve-resistor.png)
+![Widerstandskurve](images/de/curve-resistor.png)
 
 
 #### Kondensator
 Bildet eine deutliche Ellipse auf dem Bildschirm. Bei Erhöhung der Frequenz öffnet sich das Innere der Ellipse und wird deutlich sichtbar, während es sich bei Verringerung der Frequenz zu einer dünnen Linie schließt.
 
-![Kondensatorkurve](images/shared/curve-capacitor.png)
+![Kondensatorkurve](images/de/curve-capacitor.png)
 
 
 #### Spule (Induktivität)
 Das genaue Spiegelbild des Kondensators. Sie zeichnet ebenfalls eine Ellipse, aber ihre Reaktion verläuft in die entgegengesetzte Richtung: Bei Erhöhung der Frequenz verengt sich die Ellipse, während sie sich bei Verringerung der Frequenz erweitert.
 
-![Spulenkurve](images/shared/curve-inductor.png)
+![Spulenkurve](images/de/curve-inductor.png)
 
 
 #### Kondensator + ESR (Äquivalenter Serienwiderstand)
 Die charakteristische Ellipse eines Kondensators, die jedoch auf der Grafik leicht nach rechts oder links gekippt ist. Der Serienwiderstand (ESR) verursacht diese Schrägstellung der Ellipse. Der Kapazitätswert des Kondensators und die Parallel-/Serienwiderstandswerte werden separat auf der Ergebniskarte ausgewiesen.
 
-![Kondensator + ESR Kurve](images/shared/curve-capacitor-esr.png)
+![Kondensator + ESR Kurve](images/de/curve-capacitor-esr.png)
 
 
 #### Diode
 Bildet in einer Richtung eine flache Linie (Sperrbereich) und in der anderen Richtung eine ausgeprägte Knickform (Leitbereich). Die Position dieses Knickpunkts auf der Spannungsachse ist die Schwellenspannung (Durchlassspannung) der Diode. Während dieser Schwellenwert bei Siliziumdioden bei ca. 0,6 V - 0,7 V liegt, liegt er bei Schottky-Dioden weiter links (bei niedrigerer Spannung) und bei LEDs deutlich weiter rechts (bei höherer Spannung).
 
-![Diodenkurve](images/shared/curve-diode.png)
+![Diodenkurve](images/de/curve-diode.png)
 
 
 #### Zenerdiode
 Knie-Abbrüche sind in beiden Richtungen des Diagramms zu beobachten. Der Knick auf der rechten Seite zeigt die normale Durchlassschwelle der Diode, der Knick auf der linken Seite die Zener-Durchbruchspannung ($V_z$). Zenerdioden bis 15 V können mit diesem Gerät problemlos analysiert werden; für Zenerdioden mit höherer Spannung reicht die Prüfspannungsgrenze des Geräts nicht aus.
 
-![Zenerkurve](images/shared/curve-zener.png)
+![Zenerkurve](images/de/curve-zener.png)
 
 
 #### TVS-Diode (Transientenspannungsableiter)
 Eine unidirektionale TVS-Diode weist elektrisch genau die gleichen Eigenschaften wie eine Zenerdiode auf. Das Gerät stuft sie ebenfalls automatisch als **ZENER** ein (es gibt keine separate „TVS“-Kennzeichnung auf der Ergebniskarte). Der symmetrische Durchbruch bidirektionaler TVS-Dioden in beide Richtungen passt nicht perfekt in eine der Standard-Bauteilklassen. Bei der Messung wird sie auf der Karte möglicherweise als **|Z|** oder **Undefiniert** ausgegeben.
 
-![Bidirektionale TVS-Kurve](images/shared/curve-tvs-bidirectional.png)
+![Bidirektionale TVS-Kurve](images/de/curve-tvs-bidirectional.png)
 
 
 #### MOSFET — Gate-Source-Anschlüsse
 Der Gate-Anschluss von MOSFETs verhält sich wie ein sehr kleiner Kondensator, der vom Gehäuse isoliert ist, sodass praktisch kein Strom durch ihn fließt. Bei Kleinsignal-MOSFETs ist dieser Kapazitätswert so gering (einige Pikofarad), dass der fließende Strom unter der Erkennungsgrenze des Geräts bleibt und die Ergebniskarte **UNTERBRECHUNG** (Open Circuit) anzeigt. Dies ist kein Fehler, sondern der natürliche Zustand des Gates. Bei leistungsstärkeren Leistungs-MOSFETs (mit einer Kapazität von einigen Nanofarad) kann eine dünne **Kondensator**-Ellipse beobachtet werden.
 
-![MOSFET Gate-Source Kurve](images/shared/curve-mosfet-gs.png)
+![MOSFET Gate-Source Kurve](images/de/curve-mosfet-gs.png)
 
 
 #### MOSFET — Drain-Source-Anschlüsse
 Jeder MOSFET verfügt herstellungsbedingt über eine integrierte Inversdiode (Body-Diode). Wenn das Gate unbeschaltet oder mit der Source verbunden ist und Drain-Source kontaktiert wird, fließt der Strom durch diese Body-Diode und nicht durch den Kanal. Das Gerät erkennt sie direkt als Standard-**DIODE**, meist mit einer geringfügig höheren Durchlassspannung ($V_f$) im Vergleich zu Signaldioden.
 
-![MOSFET Drain-Source Kurve](images/shared/curve-mosfet-ds.png)
+![MOSFET Drain-Source Kurve](images/de/curve-mosfet-ds.png)
 
 
 #### Transistor — Basis-Emitter-Übergang
 Der Basis-Emitter-Übergang ist elektrisch eine Diode. Das Gerät gibt auf dem Bildschirm **DIODE** aus, und die Durchlassspannung ($V_f$) wird typischerweise zwischen 0,65 V und 0,70 V gemessen.
 
-![Transistor Basis-Emitter Kurve](images/shared/curve-transistor-be.png)
+![Transistor Basis-Emitter Kurve](images/de/curve-transistor-be.png)
 
 
 #### Transistor — Basis-Kollektor-Übergang
 Der Basis-Kollektor-Übergang ist ebenfalls eine Diode. Da dieser Übergang jedoch physisch über eine größere Fläche verteilt ist, fällt seine Schwellenspannung in der Regel etwas niedriger aus als die des Basis-Emitter-Übergangs. Auf der Ergebniskarte wird **DIODE** angezeigt.
 
-![Transistor Basis-Kollektor Kurve](images/shared/curve-transistor-bc.png)
+![Transistor Basis-Kollektor Kurve](images/de/curve-transistor-bc.png)
 
 
 #### Transistor — Kollektor-Emitter-Anschlüsse
 
-![Transistor Kollektor-Emitter Kurve](images/shared/curve-transistor-ce.png)
+![Transistor Kollektor-Emitter Kurve](images/de/curve-transistor-ce.png)
 Wird Kollektor-Emitter gemessen, ohne die Basis zu kontaktieren, bleiben beide internen Übergänge gesperrt, und das Gerät erkennt eine **UNTERBRECHUNG** (Open Circuit). Dies ist kein Fehler, sondern der natürliche Zustand des Transistors. Da eine Basissteuerung erforderlich ist, damit der Transistor leitet, wird unter diesen Testbedingungen im Normalfall ein isolierender Zustand erwartet.
 
 *Wichtiger Schaltungshinweis:* Beim Messen eines Bauteils direkt auf einer Platine ohne Auslöten entspricht die beobachtete Kurve nicht der Kurve dieses Bauteils allein; sie ist die Summe der elektrischen Reaktionen aller anderen Pfade und Elemente, die parallel dazu geschaltet sind. Im Zweifelsfall liefert das Ablöten eines einzelnen Pins des Bauteils von der Platine mit einem Lötkolben und das Wiederholen der Messung das zuverlässigste Ergebnis.
 
 ### 10. Erweiterte Messeinstellungen
 
-![Erweitertes Panel](images/shared/advanced-panel.png)
+![Erweitertes Panel](images/de/advanced-panel.png)
 
 Beim Wechsel in die **Erweiterte** Ansicht der Benutzeroberfläche werden die drei Parameter im einfachen Bedienfeld nicht mehr stufenbasiert gesteuert, sondern können über präzise Schieberegler millimetergenau eingestellt werden (Spannung 0,1 - 15 V, Frequenz 1 - 1000 Hz). In diesem Modus stehen zusätzlich folgende erweiterte Funktionen zur Verfügung:
 
@@ -296,7 +296,7 @@ Das Anzeigen dieser Warnungen bedeutet nicht, dass die Messung völlig falsch is
 
 ### 12. Vergleichsfunktionen
 
-![Vergleichspanel](images/shared/compare-panel.png)
+![Vergleichspanel](images/de/compare-panel.png)
 
 Die Registerkarte **Vergleich** am rechten Rand öffnet ein praktisches Seitenmenü. Drei Betriebsmodi stehen zur Verfügung:
 
@@ -316,7 +316,7 @@ Dies ist die ideale Methode zum Testen spezifischer Platinenmodelle, die wiederk
 
 #### Schritt-für-Schritt-Aufzeichnung einer Platinenreferenz:
 
-![Platinenaufzeichnung-Oberfläche](images/shared/board-record-interface.png)
+![Platinenaufzeichnung-Oberfläche](images/de/board-record-interface.png)
 1. **Projektordner erstellen:** Wählen Sie einen Arbeitsordner. Das Bild der Platine und alle Testpunkte werden in diesem einzigen Ordner gespeichert; der Projektordner kann als Ganzes auf einen anderen Computer kopiert und übertragen werden.
 2. **Platinenbild hinzufügen:** Laden Sie eine klare, schattenfreie Fotografie der Platine hoch, die direkt von oben aufgenommen wurde. Eine gleichmäßige Beleuchtung erleichtert das präzise Positionieren der Testpunkte auf dem Bild.
 3. **Punkte definieren:** Kontaktieren Sie den Testpunkt auf der physischen Platine mit der Prüfspitze. Klicken Sie gleichzeitig auf diese Stelle auf dem Platinenfoto im Softwarebildschirm. Vergeben Sie einen beschreibenden Namen für den Punkt (es wird empfohlen, die Originalbezeichnungen der Platine zu verwenden: R14, C7, U3-1) und klicken Sie auf **Punkt speichern**.
@@ -327,7 +327,7 @@ Dies ist die ideale Methode zum Testen spezifischer Platinenmodelle, die wiederk
 #### Testen einer aufgezeichneten Platine:
 Klicken Sie auf die Schaltfläche **Test starten** und steuern Sie die Punkte nacheinander an. Jeder Punkt wird gemessen, mit seiner Referenz verglichen und als bestanden oder fehlgeschlagen markiert. Nicht übereinstimmende Punkte werden auf dem Platinenfoto in **Rot** hervorgehoben. Statt einer unübersichtlichen Textliste erhalten Sie eine visuelle Fehlerkarte. Sie können den Test anhalten, Punkte überspringen und nach Abschluss über die Option **Restliche testen** nur zu den unvollständigen Punkten zurückkehren.
 
-![Platinentest-Oberfläche](images/shared/board-test-interface.png)
+![Platinentest-Oberfläche](images/de/board-test-interface.png)
 
 
 * **Auto-Modus:** Wechselt automatisch zum nächsten Punkt, sobald die Messung erfolgreich übereinstimmt. Aktivieren Sie diese Option, wenn Sie sich beim Halten der Prüfspitzen auf die physische Platine statt auf den Bildschirm konzentrieren möchten.
@@ -345,7 +345,7 @@ Beim Wechsel in den Oszilloskop-Modus wird der Signalausgang des Geräts vollst�
 
 Das Gerät tastet aufgrund von Hardwarebeschränkungen immer mit einer festen Rate von **5,5 kS/s** (5500 Abtastungen pro Sekunde) ab. Das Ändern der Zeitbasis (Timebase) im Programm ändert diese Abtastrate nicht; es ändert lediglich das auf dem Bildschirm angezeigte Zeitfenster. Das praktische Ergebnis davon ist, dass der KMY MMD-1 als **Niederfrequenz-Oszilloskop** eingestuft wird. Es eignet sich hervorragend für Netzteil-Restwelligkeit, Motorsteuerungen und Signale unterhalb des Audiobands; oberhalb von 1 kHz wird die Formtreue der Welle jedoch unzuverlässig.
 
-![Oszilloskop-Modus](images/shared/oscilloscope-mode.png)
+![Oszilloskop-Modus](images/de/oscilloscope-mode.png)
 
 
 * **AUTO:** Analysiert das eingehende Signal und stellt Zeitbasis, vertikale Spannungsskalierung und Triggerpegel automatisch für Sie ein. Wird kein aussagekräftiges Signal erkannt, bleiben die vorherigen Einstellungen erhalten.
@@ -359,6 +359,8 @@ Die Referenzpegelpfeile und der Triggerpegelpfeil an den Bildschirmrändern kön
 Vier Messungen werden sofort in der unteren Informationsleiste angezeigt: **Vpp** (Spitze-Spitze-Spannung), **Avg** (Mittelwert der Spannung), **Vrms** (Effektivspannung) und **Frequenz**. Die Datenbank enthält insgesamt 11 Messparameter; Sie können dieser Leiste beliebige Parameter hinzufügen oder daraus entfernen.
 
 ### 15. Multimeter-Modus
+
+![Multimeter-Modus](images/de/multimeter-mode.png)
 
 In diesem Modus können beide Prüfspitzen unabhängig voneinander und gleichzeitig Spannung messen. Es gibt keine Tasten zur manuellen Bereichs- oder Funktionsauswahl (AC/DC). Der KMY MMD-1 analysiert das eingehende Signal, um selbstständig zu entscheiden, ob es als Gleichspannung (DC) oder Wechselspannung (AC) gemessen werden soll.
 
@@ -374,7 +376,7 @@ Auch in diesem Modus ist der aktive Testsignalausgang vollständig ausgeschaltet
 
 ### 16. Systemeinstellungen
 
-![Einstellungen](images/shared/settings-device.png)
+![Einstellungen](images/de/settings-device.png)
 
 Durch Klicken auf das Zahnradsymbol in der oberen Leiste wird das allgemeine Einstellungsfenster geöffnet. Es besteht aus zwei grundlegenden Registerkarten: **Gerät** und **Kalibrierung**. Beide Registerkarten verfügen oben über eine schnelle Sprachauswahloption (Türkisch / Englisch).
 
@@ -385,7 +387,7 @@ Zusätzlich befindet sich unter der Überschrift „Service / Diagnose“ ein No
 
 ### 17. Kalibrierungsassistent
 
-![Kalibrierung Einstieg](images/shared/calibration-intro.png)
+![Kalibrierung Einstieg](images/de/calibration-intro.png)
 
 Die Kalibrierungsdaten des KMY MMD-1 werden **direkt im internen nichtflüchtigen Speicher des Geräts (EEPROM/Flash)** gespeichert, nicht auf dem Computer. Die Software liest diese Kalibrierungstabelle bei jedem Start aus dem Gerät selbst aus. Auf diese Weise kann das Gerät unabhängig vom angeschlossenen PC oder Telefon direkt im kalibrierten Zustand verwendet werden, ohne dass der Kalibrierungsprozess wiederholt werden muss.
 
@@ -414,7 +416,7 @@ Auf die ersten drei Phasen der Kalibrierung folgt ein einziges Bestätigungsfens
 
 ### 18. Drahtlose Nutzung und Wi-Fi-Einrichtung
 
-![Wi-Fi-Einrichtung](images/shared/wifi-setup.png)
+![Wi-Fi-Einrichtung](images/de/wifi-setup.png)
 
 Der KMY MMD-1 unterstützt die drahtlose Netzwerkverbindung in zwei verschiedenen Modi:
 
@@ -438,7 +440,7 @@ Wenn Sie sicher sind, dass das Gerät mit dem Netzwerk verbunden ist, es aber ni
 
 Die gleiche unter Windows verwendete Anwendung läuft auch unter Android, ohne Funktionseinschränkungen bei Analyse und Messung. Das Layout wurde für schmale Mobilbildschirme optimiert: Am oberen und unteren Rand des Grafikbereichs befinden sich permanente Steuerleisten.
 
-![Mobile Oberfläche](images/shared/mobile-interface.png)
+![Mobile Oberfläche](images/de/mobile-interface.png)
 
 
 * **Herunterziehen der oberen Statusleiste:** Durch Herunterstreichen dieser Leiste wird das Statusfeld geöffnet. Es enthält den Verbindungsstatus, Fehlermeldungen oder Sperrgründe (falls vorhanden) sowie drei Schnellbereiche: **Werkzeuge**, **Einstellungen** und **Verbinden/Trennen**. Bei relevanten Warnungen oder Fehlern wird dieses Feld automatisch ausgeklappt.
