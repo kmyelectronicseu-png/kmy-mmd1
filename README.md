@@ -17,17 +17,13 @@ Windows bilgisayar bağlantısı USB veya Wi-Fi, Android telefon ve tablet bağl
 | **PC** | Windows 10 / 11 (64-bit) | [Yazılımı İndir (.exe)](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-100-Kurulum.exe) |
 | **Mobil / Tablet** | Android 7.0 ve üzeri | [Mobil Uygulamayı İndir (.apk)](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-100-Mobil.apk) |
 
-### Kullanım kılavuzları
+### Kullanım kılavuzu
 
-Kurulum, ölçüm, kart testi ve sorun çözme adımları için aşağıdaki kılavuzları kullanın.
+Kurulum, ölçüm, kart testi ve sorun çözme adımları için aşağıdaki kılavuzu kullanın.
 
 | Dil | PDF | Web |
 | :--- | :--- | :--- |
 | 🇹🇷 **Türkçe** | [İndir (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-tr.pdf) | [Görüntüle](docs/user-guide-tr.md) |
-| 🇬🇧 **English** | [İndir (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-en.pdf) | [Görüntüle](docs/user-guide-en.md) |
-| 🇩🇪 **Deutsch** | [İndir (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-de.pdf) | [Görüntüle](docs/user-guide-de.md) |
-| 🇪🇸 **Español** | [İndir (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-es.pdf) | [Görüntüle](docs/user-guide-es.md) |
-| 🇫🇷 **Français** | [İndir (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-fr.pdf) | [Görüntüle](docs/user-guide-fr.md) |
 
 ### Temel işlevler
 
@@ -58,17 +54,13 @@ Windows computers connect via USB or Wi-Fi; Android phones and tablets connect v
 | **PC** | Windows 10 / 11 (64-bit) | [Download Installer (.exe)](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-100-Kurulum.exe) |
 | **Mobile / Tablet** | Android 7.0 and above | [Download Mobile App (.apk)](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-100-Mobil.apk) |
 
-### User guides
+### User guide
 
-Use the guides below for installation, measurement, board testing and troubleshooting.
+Use the guide below for installation, measurement, board testing and troubleshooting.
 
 | Language | PDF | Web |
 | :--- | :--- | :--- |
-| 🇹🇷 **Türkçe** | [Download (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-tr.pdf) | [View](docs/user-guide-tr.md) |
 | 🇬🇧 **English** | [Download (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-en.pdf) | [View](docs/user-guide-en.md) |
-| 🇩🇪 **Deutsch** | [Download (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-de.pdf) | [View](docs/user-guide-de.md) |
-| 🇪🇸 **Español** | [Download (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-es.pdf) | [View](docs/user-guide-es.md) |
-| 🇫🇷 **Français** | [Download (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-fr.pdf) | [View](docs/user-guide-fr.md) |
 
 ### Core functions
 
@@ -99,17 +91,13 @@ Windows-Computer verbinden sich über USB oder Wi-Fi, Android-Smartphones und -T
 | **PC** | Windows 10 / 11 (64-Bit) | [Installationsprogramm herunterladen (.exe)](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-100-Kurulum.exe) |
 | **Mobil / Tablet** | Android 7.0 und höher | [Mobile App herunterladen (.apk)](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-100-Mobil.apk) |
 
-### Benutzerhandbücher
+### Benutzerhandbuch
 
-Die folgenden Handbücher erläutern Installation, Messung, Platinentest und Fehlerbehebung.
+Das folgende Handbuch erläutert Installation, Messung, Platinentest und Fehlerbehebung.
 
 | Sprache | PDF | Web |
 | :--- | :--- | :--- |
-| 🇹🇷 **Türkçe** | [Herunterladen (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-tr.pdf) | [Ansehen](docs/user-guide-tr.md) |
-| 🇬🇧 **English** | [Herunterladen (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-en.pdf) | [Ansehen](docs/user-guide-en.md) |
 | 🇩🇪 **Deutsch** | [Herunterladen (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-de.pdf) | [Ansehen](docs/user-guide-de.md) |
-| 🇪🇸 **Español** | [Herunterladen (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-es.pdf) | [Ansehen](docs/user-guide-es.md) |
-| 🇫🇷 **Français** | [Herunterladen (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-fr.pdf) | [Ansehen](docs/user-guide-fr.md) |
 
 ### Grundfunktionen
 
@@ -140,17 +128,13 @@ Los ordenadores Windows se conectan por USB o Wi-Fi; los teléfonos y tabletas A
 | **PC** | Windows 10 / 11 (64 bits) | [Descargar Instalador (.exe)](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-100-Kurulum.exe) |
 | **Móvil / Tablet** | Android 7.0 y superior | [Descargar Aplicación Móvil (.apk)](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-100-Mobil.apk) |
 
-### Guías de usuario
+### Guía de usuario
 
-Consulte estas guías para instalación, medición, prueba de placas y resolución de problemas.
+Consulte esta guía para instalación, medición, prueba de placas y resolución de problemas.
 
 | Idioma | PDF | Web |
 | :--- | :--- | :--- |
-| 🇹🇷 **Türkçe** | [Descargar (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-tr.pdf) | [Ver](docs/user-guide-tr.md) |
-| 🇬🇧 **English** | [Descargar (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-en.pdf) | [Ver](docs/user-guide-en.md) |
-| 🇩🇪 **Deutsch** | [Descargar (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-de.pdf) | [Ver](docs/user-guide-de.md) |
 | 🇪🇸 **Español** | [Descargar (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-es.pdf) | [Ver](docs/user-guide-es.md) |
-| 🇫🇷 **Français** | [Descargar (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-fr.pdf) | [Ver](docs/user-guide-fr.md) |
 
 ### Funciones principales
 
@@ -181,16 +165,12 @@ Les ordinateurs Windows se connectent par USB ou Wi-Fi ; les téléphones et tab
 | **PC** | Windows 10 / 11 (64-bit) | [Télécharger l'Installateur (.exe)](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-100-Kurulum.exe) |
 | **Mobile / Tablette** | Android 7.0 et supérieur | [Télécharger l'Application Mobile (.apk)](https://github.com/kmyelectronicseu-png/kmy-mmd1/releases/latest/download/KMY-MMD-100-Mobil.apk) |
 
-### Guides utilisateur
+### Guide utilisateur
 
-Consultez ces guides pour l’installation, la mesure, le test de carte et la résolution des problèmes.
+Consultez ce guide pour l’installation, la mesure, le test de carte et la résolution des problèmes.
 
 | Langue | PDF | Web |
 | :--- | :--- | :--- |
-| 🇹🇷 **Türkçe** | [Télécharger (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-tr.pdf) | [Consulter](docs/user-guide-tr.md) |
-| 🇬🇧 **English** | [Télécharger (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-en.pdf) | [Consulter](docs/user-guide-en.md) |
-| 🇩🇪 **Deutsch** | [Télécharger (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-de.pdf) | [Consulter](docs/user-guide-de.md) |
-| 🇪🇸 **Español** | [Télécharger (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-es.pdf) | [Consulter](docs/user-guide-es.md) |
 | 🇫🇷 **Français** | [Télécharger (PDF)](https://github.com/kmyelectronicseu-png/kmy-mmd1/raw/main/docs/pdf/kmy-mmd100-user-guide-fr.pdf) | [Consulter](docs/user-guide-fr.md) |
 
 ### Fonctions principales
