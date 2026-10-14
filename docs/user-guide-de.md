@@ -253,7 +253,7 @@ Der **Excel-Bericht** enthält drei Arbeitsblätter: Einzelmessungen, Übersicht
 
 Im Oszilloskop-Modus ist der Prüfsignalgenerator aus; die Sonden messen externe Signale. Die Eingangsgrenze beträgt **50 V**. Kanal 1 ist **gelb**, Kanal 2 **cyan**. Beim Kennlinientest ist Sonde 1 cyan und Sonde 2 gelb.
 
-Die feste Abtastrate beträgt **5,5 kS/s**, also 5500 Messwerte pro Sekunde. Die Zeitbasis ändert nur das dargestellte Zeitfenster. Verwenden Sie das Gerät als **Niederfrequenz-Oszilloskop**; oberhalb 1 kHz ist die Kurvenform nicht zuverlässig. Versorgungsschwankungen und Motortreiberausgänge innerhalb dieser Frequenzgrenzen lassen sich untersuchen.
+Die Abtastrate wird automatisch aus der Zeitbasis gewählt und im Anzeigefeld auf dem Bildschirm angezeigt. **Bei kurzen Zeitbasen (10 µs/div – 5 ms/div)** erfasst das Gerät das Signal als schnellen Block: bis zu **857 kS/s** mit einer Sonde bzw. **428 kS/s** je Kanal mit zwei Sonden; die Triggerung erfolgt im Gerät. **Ab 10 ms/div** wechselt es in einen lückenlosen Datenstrom und mittelt mehrere Messwerte, um das Rauschen zu verringern. Bei den kürzesten Zeitbasen ist die Gleichspannungsanzeige weniger genau; verwenden Sie für genaue Gleichspannungsmessungen den **Multimeter**-Modus.
 
 * **AUTO (automatische Einstellung):** Passt Zeitbasis, Spannungsmaßstab und Triggerpegel an das Signal an. Ohne verwertbares Signal bleiben die Einstellungen erhalten.
 * **Auto:** Aktualisiert die Anzeige auch ohne Trigger.
@@ -339,8 +339,9 @@ Mobile Firmware-Updates sind nicht möglich. **Aktualisieren** lädt die neue Ve
 | **Testspannung** | $\pm 15\text{ V}$ Spitze (Peak) |
 | **Testfrequenz** | $1\text{ Hz} - 1000\text{ Hz}$ |
 | **Eingangsgrenze Oszilloskop / Voltmeter** | höchstens $50\text{ V}$ |
-| **Abtastrate Oszilloskop** | $5,5\text{ kS/s}$ (hardwareseitig fest) |
-| **Aufzeichnungstiefe Oszilloskop** | letzte $20\text{ Sekunden}$, lückenlos |
+| **Abtastrate Oszilloskop** | bis $857\text{ kS/s}$ ($428\text{ kS/s}$ je Kanal mit zwei Sonden), automatisch aus der Zeitbasis |
+| **Zeitbasis Oszilloskop** | 10 µs/div – 2 s/div |
+| **Aufzeichnungstiefe Oszilloskop** | letzte $20\text{ Sekunden}$, lückenlos (ab 10 ms/div); bei kurzen Zeitbasen der zuletzt erfasste Block |
 | **Versorgung** | über den USB-Anschluss |
 
 **Regeln für Sicherheit und Betrieb**
@@ -361,8 +362,9 @@ Mobile Firmware-Updates sind nicht möglich. **Aktualisieren** lädt die neue Ve
 * **KEINE MESSUNG:** Prüfen Sie den Kontakt. Verwenden Sie bei hochohmigen Bauteilen **Empfindlich**.
 * **BESETZT:** Ein anderer Client ist verbunden. Beenden Sie dessen Verbindung.
 * **Messwertverschiebung:** Schalten Sie aus und ein. Bei anhaltender Abweichung oder Warnung wenden Sie sich an KMY Electronics.
-* **Verzerrte Oszilloskopkurve:** Prüfen Sie die Frequenz. Bei 5,5 kS/s lassen sich Kurven über 1 kHz nicht zuverlässig untersuchen.
+* **Verzerrte Oszilloskopkurve:** Wählen Sie eine zum Signal passende Zeitbasis oder drücken Sie **AUTO**. Bei sehr langsamen Zeitbasen werden schnell veränderliche Signale gemittelt und erscheinen abgeflacht.
 * **Gerät auf Mobilgerät nicht gefunden:** Prüfen Sie das gemeinsame Netz. Im AP-Modus muss das Smartphone mit **KMY MMD-100** verbunden sein.
+* **Android-Update lässt sich nicht installieren („App nicht installiert“):** Deinstallieren Sie die vorherige Version und installieren Sie dann die neue Version von der Versionsseite. Beim Deinstallieren werden die auf dem Smartphone gespeicherten Platinenprojekte und Berichte gelöscht.
 
 ### 22. Technischer Support und Kontakt
 

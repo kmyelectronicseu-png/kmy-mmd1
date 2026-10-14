@@ -253,7 +253,7 @@ Testi duraklatabilir veya nokta atlayabilirsiniz. **Kalanları Test Et**, ölç�
 
 Osiloskop modunda test sinyali üreteci kapanır; problar dışarıdan gelen sinyali ölçer. Giriş sınırı **50 V**'tur. Kanal 1 **sarı**, Kanal 2 **camgöbeği** renktedir. Eğri testinde Prob 1 camgöbeği, Prob 2 sarıdır.
 
-Örnekleme hızı **5,5 kS/s**, yani saniyede 5500 örnektir ve sabittir. Zaman tabanı yalnız görüntülenen zaman aralığını değiştirir. Cihaz **alçak frekans osiloskobu** olarak kullanılmalıdır; 1 kHz üzerindeki sinyallerde dalga şekli doğruluğu güvenilir değildir. Güç kaynağı dalgalanması ve uygun frekanstaki motor sürücü çıkışları bu sınırlar içinde incelenebilir.
+Örnekleme hızı zaman tabanına göre kendiliğinden seçilir ve ekrandaki rozette görünür. **Kısa zaman tabanlarında (10 µs/div – 5 ms/div)** cihaz sinyali yüksek hızda bir blok olarak yakalar: tek probda **857 kS/s'ye**, iki probda kanal başına **428 kS/s'ye** kadar; tetikleme cihazın içinde yapılır. **10 ms/div ve daha yavaş** zaman tabanlarında kesintisiz akışa geçilir; birkaç örneğin ortalaması alınarak gürültü azaltılır. En kısa zaman tabanlarında DC seviye okuması daha az hassastır; hassas DC ölçümü için **Multimetre** modunu kullanın.
 
 * **OTO (otomatik kurulum):** Zaman tabanı, gerilim ölçeği ve tetikleme eşiğini sinyale göre ayarlar. Anlamlı sinyal bulunmazsa mevcut ayarları korur.
 * **Otomatik (Auto):** Tetikleme olmasa da ekranı yeniler.
@@ -339,8 +339,9 @@ Mobilde cihaz yazılımı güncellenmez. **Güncelle**, mobil uygulamanın yeni 
 | **Test gerilimi** | $\pm 15\text{ V}$ tepe (peak) |
 | **Test frekansı** | $1\text{ Hz} - 1000\text{ Hz}$ |
 | **Osiloskop / voltmetre giriş sınırı** | En çok $50\text{ V}$ |
-| **Osiloskop örnekleme hızı** | $5,5\text{ kS/s}$ (donanımda sabit) |
-| **Osiloskop kayıt derinliği** | Son $20\text{ saniye}$, kesintisiz |
+| **Osiloskop örnekleme hızı** | $857\text{ kS/s}$'ye kadar (iki probda kanal başına $428\text{ kS/s}$), zaman tabanına göre otomatik |
+| **Osiloskop zaman tabanı** | 10 µs/div – 2 s/div |
+| **Osiloskop kayıt derinliği** | Son $20\text{ saniye}$, kesintisiz (10 ms/div ve daha yavaş); kısa zaman tabanlarında son yakalanan blok |
 | **Besleme** | USB portundan |
 
 **Güvenlik ve çalışma kuralları**
@@ -361,8 +362,9 @@ Mobilde cihaz yazılımı güncellenmez. **Güncelle**, mobil uygulamanın yeni 
 * **ÖLÇÜM YOK:** Teması kontrol edin. Yüksek empedanslı bileşenlerde **Hassas** kademesini deneyin.
 * **MEŞGUL:** Başka istemci bağlıdır. Diğer bilgisayar veya mobil cihazdaki bağlantıyı kapatın.
 * **Ölçümlerde kayma:** Cihazı kapatıp açın. Kayma veya uyarı sürerse KMY Electronics destek ekibiyle iletişime geçin.
-* **Osiloskopta bozuk dalga şekli:** Sinyal frekansını kontrol edin. 5,5 kS/s örnekleme hızında 1 kHz üzerindeki dalga şekilleri güvenilir biçimde incelenemez.
+* **Osiloskopta bozuk dalga şekli:** Sinyale uygun bir zaman tabanı seçin ya da **OTO** düğmesine basın. Çok yavaş zaman tabanlarında hızlı değişen sinyaller ortalanır ve düzleşmiş görünür.
 * **Mobilde cihaz bulunamıyor:** Telefon ve cihazın aynı ağda olduğunu doğrulayın. AP modunda telefonun **KMY MMD-100** ağına bağlı olması gerekir.
+* **Android güncellemesi kurulmuyor (“Uygulama yüklenmedi”):** Önceki sürümü kaldırın, ardından yeni sürümü sürüm sayfasından kurun. Kaldırma, telefonda kayıtlı kart projelerini ve raporları siler.
 
 ### 22. Teknik destek ve iletişim
 

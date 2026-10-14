@@ -253,7 +253,7 @@ Puede pausar o saltar puntos. **Probar restantes** completa los que no se han me
 
 En modo osciloscopio, el generador de prueba está apagado y las sondas miden señales externas. El límite de entrada es **50 V**. Canal 1 es **amarillo** y Canal 2 **cian**. En prueba de curva, Sonda 1 es cian y Sonda 2 amarilla.
 
-El muestreo fijo es de **5,5 kS/s**, es decir, 5500 muestras por segundo. La base de tiempos solo cambia el intervalo mostrado. Utilice el equipo como **osciloscopio de baja frecuencia**; por encima de 1 kHz la forma de onda no es fiable. Pueden examinarse ondulación de alimentación y salidas de controladores de motor dentro de estos límites.
+La frecuencia de muestreo se elige automáticamente según la base de tiempos y se muestra en el indicador de la pantalla. **En bases de tiempos cortas (10 µs/div – 5 ms/div)** el equipo captura la señal como un bloque de alta velocidad: hasta **857 kS/s** con una sonda, o **428 kS/s** por canal con dos; el disparo se realiza dentro del equipo. **A partir de 10 ms/div** pasa a un flujo continuo y promedia varias muestras para reducir el ruido. En las bases de tiempos más cortas la lectura del nivel de continua es menos precisa; para medidas de continua precisas utilice el modo **multímetro**.
 
 * **AUTO (ajuste automático):** Ajusta base de tiempos, escala de tensión y nivel de disparo. Sin señal útil conserva los ajustes.
 * **Auto:** Actualiza la pantalla sin necesitar disparo.
@@ -339,8 +339,9 @@ No se actualiza el firmware desde el móvil. **Actualizar** descarga la nueva ve
 | **Voltaje de prueba** | $\pm 15\text{ V}$ pico (peak) |
 | **Frecuencia de prueba** | $1\text{ Hz} - 1000\text{ Hz}$ |
 | **Límite de entrada de osciloscopio / voltímetro** | Máximo $50\text{ V}$ |
-| **Frecuencia de muestreo del osciloscopio** | $5,5\text{ kS/s}$ (fija en hardware) |
-| **Profundidad de registro del osciloscopio** | Últimos $20\text{ segundos}$, sin cortes |
+| **Frecuencia de muestreo del osciloscopio** | Hasta $857\text{ kS/s}$ ($428\text{ kS/s}$ por canal con dos sondas), automática según la base de tiempos |
+| **Base de tiempos del osciloscopio** | 10 µs/div – 2 s/div |
+| **Profundidad de registro del osciloscopio** | Últimos $20\text{ segundos}$, sin cortes (a partir de 10 ms/div); en bases de tiempos cortas, el último bloque capturado |
 | **Alimentación** | Por el puerto USB |
 
 **Reglas de seguridad y uso**
@@ -361,8 +362,9 @@ No se actualiza el firmware desde el móvil. **Actualizar** descarga la nueva ve
 * **SIN LECTURA:** Revise el contacto. Pruebe **Sensible** en componentes de alta impedancia.
 * **OCUPADO:** Otro cliente está conectado. Cierre esa conexión.
 * **Desviación de medidas:** Apague y encienda. Si la desviación o los avisos continúan, contacte con KMY Electronics.
-* **Onda deformada:** Revise la frecuencia. Con 5,5 kS/s no se examinan de forma fiable ondas por encima de 1 kHz.
+* **Onda deformada:** Elija una base de tiempos adecuada a la señal o pulse **AUTO**. En bases de tiempos muy lentas, las señales que cambian rápido se promedian y aparecen aplanadas.
 * **Equipo no encontrado en móvil:** Confirme la misma red. En modo AP, conecte el teléfono a **KMY MMD-100**.
+* **La actualización de Android no se instala («Aplicación no instalada»):** Desinstale la aplicación instalada y luego instale la nueva versión desde la página de versiones. La desinstalación elimina los proyectos de placas y los informes guardados en el teléfono.
 
 ### 22. Soporte técnico y contacto
 

@@ -253,7 +253,7 @@ Vous pouvez suspendre le test ou ignorer des points. **Tester les restants** com
 
 En mode oscilloscope, le générateur de test est arrêté et les sondes mesurent les signaux externes. La limite d’entrée est de **50 V**. La voie 1 est **jaune**, la voie 2 **cyan**. En test de courbe, Sonde 1 est cyan et Sonde 2 jaune.
 
-L’échantillonnage est fixe à **5,5 kS/s**, soit 5500 échantillons par seconde. La base de temps modifie seulement l’intervalle affiché. Utilisez l’appareil comme **oscilloscope basse fréquence** ; au-dessus de 1 kHz, la forme d’onde n’est pas fiable. L’ondulation d’alimentation et les sorties de commande moteur peuvent être étudiées dans ces limites.
+La fréquence d’échantillonnage est choisie automatiquement selon la base de temps et affichée dans l’indicateur à l’écran. **Aux bases de temps courtes (10 µs/div – 5 ms/div)**, l’appareil capture le signal en un bloc rapide : jusqu’à **857 kS/s** avec une sonde, ou **428 kS/s** par voie avec deux ; le déclenchement se fait dans l’appareil. **À partir de 10 ms/div**, il passe à un flux continu et moyenne plusieurs échantillons pour réduire le bruit. Aux bases de temps les plus courtes, la lecture du niveau continu est moins précise ; pour des mesures de tension continue précises, utilisez le mode **multimètre**.
 
 * **AUTO (réglage automatique) :** Règle base de temps, échelle de tension et seuil de déclenchement. Sans signal exploitable, conserve les réglages.
 * **Auto :** Rafraîchit sans déclenchement requis.
@@ -339,8 +339,9 @@ Le micrologiciel ne peut pas être mis à jour sur mobile. **Mettre à jour** t�
 | **Tension de test** | $\pm 15\text{ V}$ crête (peak) |
 | **Fréquence de test** | $1\text{ Hz} - 1000\text{ Hz}$ |
 | **Limite d'entrée oscilloscope / voltmètre** | $50\text{ V}$ au maximum |
-| **Fréquence d'échantillonnage de l'oscilloscope** | $5,5\text{ kS/s}$ (figée dans le matériel) |
-| **Profondeur d'enregistrement de l'oscilloscope** | Les $20$ dernières secondes, sans interruption |
+| **Fréquence d'échantillonnage de l'oscilloscope** | Jusqu'à $857\text{ kS/s}$ ($428\text{ kS/s}$ par voie avec deux sondes), automatique selon la base de temps |
+| **Base de temps de l'oscilloscope** | 10 µs/div – 2 s/div |
+| **Profondeur d'enregistrement de l'oscilloscope** | Les $20$ dernières secondes, sans interruption (à partir de 10 ms/div) ; aux bases de temps courtes, le dernier bloc capturé |
 | **Alimentation** | Par le port USB |
 
 **Règles de sécurité et d’utilisation**
@@ -361,8 +362,9 @@ Le micrologiciel ne peut pas être mis à jour sur mobile. **Mettre à jour** t�
 * **PAS DE MESURE :** Vérifiez le contact. Essayez **Sensible** pour une forte impédance.
 * **OCCUPÉ :** Un autre client est connecté. Fermez cette connexion.
 * **Décalage des mesures :** Éteignez et rallumez. Si l’écart ou les avertissements persistent, contactez KMY Electronics.
-* **Onde déformée :** Vérifiez la fréquence. À 5,5 kS/s, les ondes supérieures à 1 kHz ne peuvent pas être examinées de façon fiable.
+* **Onde déformée :** Choisissez une base de temps adaptée au signal ou appuyez sur **AUTO**. Aux bases de temps très lentes, les signaux qui varient rapidement sont moyennés et paraissent aplatis.
 * **Appareil non trouvé sur mobile :** Confirmez le réseau commun. En mode point d’accès, connectez le téléphone à **KMY MMD-100**.
+* **La mise à jour Android ne s’installe pas (« Application non installée ») :** Désinstallez la version précédente, puis installez la nouvelle depuis la page des versions. La désinstallation supprime les projets de cartes et les rapports enregistrés sur le téléphone.
 
 ### 22. Support technique et contact
 

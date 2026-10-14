@@ -253,7 +253,7 @@ The **Excel report** contains three worksheets: point-by-point measurements, a s
 
 In oscilloscope mode the test generator is off and the probes measure external signals. The input limit is **50 V**. Channel 1 is **yellow** and Channel 2 **cyan**. In curve testing Probe 1 is cyan and Probe 2 yellow.
 
-Sampling is fixed at **5.5 kS/s**, or 5500 samples per second. The timebase changes only the displayed time window. Use the device as a **low-frequency oscilloscope**; waveform accuracy is unreliable above 1 kHz. Supply ripple and motor-driver outputs within these frequency limits can be examined.
+The sample rate is chosen automatically from the timebase and shown in the on-screen badge. **At short timebases (10 µs/div – 5 ms/div)** the device captures the signal as a high-speed block: up to **857 kS/s** with one probe, or **428 kS/s** per channel with two; triggering takes place inside the device. **At 10 ms/div and slower** it switches to a continuous stream, averaging several samples to reduce noise. DC level readings are less precise at the shortest timebases; use **Multimeter** mode for precise DC measurements.
 
 * **AUTO (auto setup):** Sets timebase, voltage scale and trigger level from the signal. If no meaningful signal is found, it retains the existing settings.
 * **Auto:** Refreshes the display without requiring a trigger.
@@ -339,8 +339,9 @@ Mobile firmware updates are not supported. **Update** downloads the new version 
 | **Test voltage** | $\pm 15\text{ V}$ peak |
 | **Test frequency** | $1\text{ Hz} - 1000\text{ Hz}$ |
 | **Oscilloscope / voltmeter input limit** | $50\text{ V}$ max |
-| **Oscilloscope sample rate** | $5.5\text{ kS/s}$ (fixed in hardware) |
-| **Oscilloscope record depth** | Last $20\text{ seconds}$, continuous |
+| **Oscilloscope sample rate** | Up to $857\text{ kS/s}$ ($428\text{ kS/s}$ per channel with two probes), automatic from the timebase |
+| **Oscilloscope timebase** | 10 µs/div – 2 s/div |
+| **Oscilloscope record depth** | Last $20\text{ seconds}$, continuous (10 ms/div and slower); last captured block at short timebases |
 | **Power** | From the USB port |
 
 **Safety and operating rules**
@@ -361,8 +362,9 @@ Mobile firmware updates are not supported. **Update** downloads the new version 
 * **NO READING:** Check contact. Try **Fine** for high-impedance components.
 * **BUSY:** Another client is connected. Close that connection on the other computer or mobile device.
 * **Measurement drift:** Power the device off and on. If drift or warnings persist, contact KMY Electronics support.
-* **Distorted oscilloscope waveform:** Check frequency. At 5.5 kS/s, waveforms above 1 kHz cannot be reliably examined.
+* **Distorted oscilloscope waveform:** Choose a timebase that suits the signal, or press **AUTO**. At very slow timebases, fast-changing signals are averaged and appear flattened.
 * **Device not found on mobile:** Confirm the same network. In AP mode, connect the phone to **KMY MMD-100**.
+* **Android update will not install (“App not installed”):** Uninstall the previous version, then install the new version from the release page. Uninstalling deletes board projects and reports stored on the phone.
 
 ### 22. Support and contact
 
